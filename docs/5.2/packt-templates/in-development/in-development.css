@@ -1,0 +1,208 @@
+/*-- Common style --*/
+.side-nav .nav-link {
+  font-family: space mono;
+  text-transform: uppercase;
+}
+.side-nav:after {
+  content: '';
+  bottom: 0;
+  position: absolute;
+  border-right: 280px solid transparent;
+  border-bottom: 50vh solid #191919;
+  z-index: -1;
+}
+.font-space-mono {
+  font-family: space mono;
+}
+.nav-toggle {
+  display: none;
+}
+.navbar.sticky-top {
+  height: 90px;
+}
+.navbar.sticky-top h4 {
+  max-width: calc(100% - 250px);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.main-body .breadcrumb {
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+.main-body .breadcrumb .breadcrumb-item {
+  display: flex;
+}
+.main-body .breadcrumb-item:last-child {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: normal;
+  display: block;
+}
+.nav-toggle .bi-chevron-right {
+  color: #ffffff !important;
+}
+.back-page {
+  margin-right: 30px;
+}
+.header-select-box {
+  color: #2b2b2b;
+  border: none;
+  border-bottom: 1px solid #2b2b2b;
+  background: transparent;
+  padding: 0;
+  outline: none;
+  box-shadow: none;
+  min-width: 175px;
+}
+@media (max-width: 1199px) {
+  .table th,.table td {
+    padding: 10px !important;
+  }
+  body {
+    font-size: 14px;
+  }
+  h4, .h4 {
+    font-size: 20px;
+  }
+  h5, .h5 {
+    font-size: 16px;
+  }
+  main.isActive {
+    overflow: hidden;
+  }
+  .nav-toggle {
+    position: absolute;
+    left: 0;
+    background: #212529;
+    color: #fff;
+    padding: 5px 3px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+  .side-nav {
+    transform: translateX(-280px);
+    transition: 0.5s all;
+    position: fixed;
+  }
+  .main-body {
+    min-width: 100vw;
+    transition: 0.5s all;
+    padding-top: 90px;
+  }
+  .main-body .sticky-top {
+    padding-left: 50px !important;
+  }
+  .nav-toggle .bi-chevron-right {
+    transition: 0.5s all;
+  }
+  .isActive .nav-toggle .bi-chevron-right {
+    transform: rotate(180deg);
+  }
+  .isActive .side-nav {
+    transform: unset;
+  }
+  .isActive .main-body {
+    margin-left: 280px;
+  }
+  .navbar.sticky-top {
+    position: fixed;
+    width: 100%;
+  }
+  .navbar.sticky-top h4 {
+    max-width: calc(100% - 175px);
+  }
+}
+@media (max-width: 767px) {
+  .main-body .breadcrumb .breadcrumb-item:not(:first-child):not(:last-child) {
+    display: none;
+  }
+  .navbar.sticky-top h4 {
+    max-width: calc(100% - 190px);
+  }
+  .header-select-box {
+    min-width: unset;
+    padding-right: 20px;
+  }
+  .back-page {
+    margin-right: 15px;
+  }
+  .back-page img {
+    width: 13px;
+    height: unset;
+  }
+  .filter-list {
+    flex-wrap: wrap;
+    justify-content: end;
+  }
+}
+/*-- /Common style --*/
+.table {
+  overflow: hidden;
+  border-radius: 5px !important;
+}
+.table-borderless-view {
+  border-collapse: collapse !important;
+  border: none !important;
+}
+.table-borderless-view td,
+.table-borderless-view th {
+  border: none;
+  vertical-align: middle;
+}
+.table th {
+  padding: 15px 20px !important;
+}
+.table td {
+  padding: 20px !important;
+}
+.clickable td:hover {
+  cursor: pointer;
+}
+.table-borderless-view td {
+  border-top: 1px solid #e8e8e8;
+}
+.table-borderless-view .no-sort::before,
+.table-borderless-view .no-sort::after {
+  display: none !important;
+}
+.table-borderless-view .no-sort {
+  pointer-events: none !important;
+  cursor: default !important;
+}
+.poster-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.poster-wrapper .progress {
+  position: absolute;
+  width: 95%;
+  bottom: 35px;
+  transform: translateX(-50%);
+  left: 50%;
+  border-radius: 4px;
+}
+.table .sorting {
+  white-space: nowrap;
+  cursor: pointer;
+}
+.table .sorting:after {
+  content: '';
+  background: url(../../assets/img/tableSortIcon.svg) no-repeat;
+  height: 14px;
+  width: 12px;
+  display: inline-flex;
+  margin-left: 10px;
+}
+.table .sorting.sorting_asc:after {
+  opacity: 0.5;
+}
+.table_responsive {
+  overflow-x: auto;
+}
+.table_responsive .row, .table_responsive .col-sm-12 {
+  margin: 0;
+  padding: 0;
+}

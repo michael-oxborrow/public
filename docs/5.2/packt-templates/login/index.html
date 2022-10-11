@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en" >
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Michael Oxborrow, Prince Pal">
+  <meta name="generator" content="Hugo 0.101.0">
+  <title>Login · Packt Design Guide v5.2</title>
+
+  <link rel="canonical" href="https://design.packt.com/docs/5.2/packt-templates/login/">
+  
+  
+  
+
+  
+
+  
+
+<link href="/css/packt.min.css" rel="stylesheet">
+
+  <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" crossorigin="use-credentials" href="/docs/5.2/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#712cf9">
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-divider {
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+  </style>
+  
+</head>
+<body>
+  <style>
+    .divider:after,
+    .divider:before {
+        background: hsl(203, 20%, 25%);
+        content: "";
+        flex: 1;
+        height: .0625rem;
+    }
+
+    @media (min-width: 75rem) {
+
+        login-card:after {
+            background-size: cover;
+            background: url('../../assets/img/packt-templates/author-sight/icon-right-caret.svg') no-repeat, center;
+            bottom: 0;
+            content: "";
+            height: 14.5rem;
+            position: absolute;
+            right: calc(-50% - -3.125rem);
+            width: 6.4375rem;
+        }
+
+        login-card:before {
+            background-size: cover;
+            background: url('../../assets/img/packt-templates/author-sight/icon-left-caret.svg') no-repeat, center;
+            content: "";
+            height: 14.5rem;
+            left: calc(-50% - -3.125rem);
+            position: absolute;
+            top: 0;
+            width: 6.4375rem;
+        }
+
+
+
+    }
+</style>
+<header>
+
+</header>
+<main>
+    <div class="container-fluid min-vh-100 p-3 d-flex align-items-center justify-content-center"
+        style="background: url(../../assets/img/packt-templates/author-sight/login-background.svg) no-repeat, center;background-size: cover;">
+        <div class="card rounded-4 shadow md-p-5 px-3 py-5 border-0 text-center w-100 login-card"
+            style="max-width: 611px;">
+            <img src="../../assets/brand/packt-logo.svg" height="78" width="167" class="m-auto mb-4" alt="Logo">
+            <p>Please click on the link sent to your email to finish logging in.</p>
+            <form class="">
+                <div class="form-group text-start my-4 m-auto pb-1" style="max-width: 384px;">
+                    <label class="pb-1">Email</label>
+                    <input class="form-control rounded-3 py-2" type="text" placeholder="Add Email">
+                </div>
+                <button type="button" class="btn btn-secondary rounded-pill py-2 px-5">GET MAGIC LINK</button>
+                <div class="text-center pt-4">
+                    <div class="divider d-flex align-items-center my-4 py-1 mx-auto" style="max-width: 300px;">
+                        <p class="text-center mx-3 mb-0">Or sign in with:</p>
+                    </div>
+                    <div class="my-4 pb-3">
+                        <button type="button" class="btn btn-link btn-floating mx-1 p-0">
+                            <img src="../../assets/img/window.svg" height="38" width="38" alt="Window">
+                        </button>
+                        <button type="button" class="btn btn-link btn-floating mx-1 p-0">
+                            <img src="../../assets/img/facebook.svg" height="38" width="38" alt="Facebook">
+                        </button>
+                        <button type="button" class="btn btn-link btn-floating mx-1 p-0">
+                            <img src="../../assets/img/github.svg" height="38" width="38" alt="Github">
+                        </button>
+                        <button type="button" class="btn btn-link btn-floating mx-1 p-0">
+                            <img src="../../assets/img/twitter.svg" height="38" width="38" alt="Twitter">
+                        </button>
+                        <button type="button" class="btn btn-link btn-floating mx-1 p-0">
+                            <img src="../../assets/img/linkedin.svg" height="38" width="38" alt="Linkedin">
+                        </button>
+                    </div>
+                    <button type="button" class="btn btn-primary rounded-pill py-2 px-5 w-100"
+                        style="max-width: 293px;">SIGN UP</button>
+                    <p class="pt-4 mb-0"><a href="#" class="text-decoration-none">Become a contributor</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+<footer>
+
+</footer>
+
+  <script src="/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+  
+    </body>
+
+    
+    
+    
+
+</html>

@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en" >
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Michael Oxborrow, Prince Pal">
+  <meta name="generator" content="Hugo 0.101.0">
+  <title>Product example · Packt Design Guide v5.2</title>
+
+  <link rel="canonical" href="https://design.packt.com/docs/5.2/packt-components/product/">
+  
+  
+  
+
+  
+
+  
+
+<link href="/css/packt.min.css" rel="stylesheet">
+
+  <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" crossorigin="use-credentials" href="/docs/5.2/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#712cf9">
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-divider {
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+  </style>
+  
+</head>
+<body>
+  <style>
+  .product-device {
+    background-color: hsl(0, 0%, 20%);
+    border-radius: 1.3125rem;
+    bottom: -30%;
+    height: 33.75rem;
+    position: absolute;
+    right: 0;
+    transform: rotate(30deg);
+    width: 18.75rem;
+  }
+
+  .product-device::before {
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: .3125rem;
+    bottom: 10%;
+    content: "";
+    left: .625rem;
+    position: absolute;
+    right: .625rem;
+    top: 10%;
+  }
+  
+  .product-device-2 {
+    background-color: hsl(0, 0%, 90%);
+    bottom: 0;
+    left: 0;
+    right: auto;
+    top: -25%;
+  }
+</style>
+<header class="bg-dark text-white sticky-top">
+  <nav class="container d-flex flex-column flex-md-row justify-content-between align-items-center py-4">
+    <a class="d-flex align-items-center navbar-brand" href="#" aria-label="Product">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 837 212" class="pe-3" height="32">
+        <polygon fill="#F97141" points="788.2,43.5 747.4,43.5 799.6,106.5 747.4,169.6 788.2,169.6 837,106.5">
+        </polygon>
+        <polygon fill="#F97141" points="603.4,43.5 644.1,43.5 592,106.5 644.1,169.6 603.4,169.6 554.5,106.5">
+        </polygon>
+        <polygon fill="#F97141" points="48.9,43.5 89.6,43.5 37.5,106.5 89.6,169.6 48.9,169.6 0,106.5"></polygon>
+        <path fill="#F97141" d="M340.5,55.7c-3.5-3.7-7.7-6.8-12.3-9.2c-7.5-3.7-15.9-5.6-24.3-5.5c-11-0.1-21.7,2.8-31.1,8.6 c-9.2,5.7-16.7,13.8-21.7,23.5c-5.2,9.9-7.8,21.2-7.8,33.7c-0.2,11.6,2.5,23.1,7.8,33.4c5,9.7,12.5,17.8,21.7,23.5 c9.3,5.8,20.1,8.8,31.1,8.6c8.4,0.1,16.8-1.8,24.3-5.6c4.6-2.4,8.7-5.5,12.3-9.2v12.2h34v-126h-34V55.7z M333.5,131.3 c-5.9,6.4-13.7,9.5-23.2,9.5c-5.8,0.1-11.6-1.4-16.6-4.3c-4.8-2.9-8.7-7-11.2-12c-2.8-5.5-4.2-11.7-4-17.9c-0.1-6.1,1.3-12.2,4-17.6 c2.5-5,6.4-9.1,11.2-12c5-2.9,10.8-4.4,16.6-4.3c5.9-0.1,11.7,1.4,16.8,4.3c4.8,2.9,8.7,7,11.2,12c2.8,5.5,4.1,11.5,4,17.6 C342.3,116.7,339.3,124.9,333.5,131.3L333.5,131.3z">
+        </path>
+        <path fill="#F97141" d="M475.9,137.5c-4.9,2.1-10.2,3.1-15.5,3c-5.9,0.1-11.7-1.4-16.8-4.3c-4.9-2.8-9-7-11.8-12 c-2.9-5.4-4.4-11.5-4.3-17.6c-0.2-6.2,1.3-12.2,4.3-17.6c2.8-4.9,6.9-8.9,11.8-11.8c5.1-2.9,10.9-4.4,16.8-4.3 c5.2-0.1,10.4,0.9,15.3,2.9c4.5,1.9,8.6,4.7,11.9,8.4L509.5,62c-6-6.7-13.4-12.1-21.7-15.7c-8.7-3.7-18-5.6-27.4-5.5 c-12.1-0.2-24,2.9-34.6,8.8c-10.1,5.6-18.5,13.7-24.4,23.6s-8.9,21.2-8.9,33.7c-0.3,23.7,12.4,45.6,33.2,56.9 c10.3,5.8,21.8,8.6,34.7,8.6c9.4,0.1,18.8-1.8,27.4-5.5c8.4-3.7,16-9.1,22.2-15.9l-22.2-22.2C484.5,132.6,480.4,135.6,475.9,137.5z">
+        </path>
+        <polyline fill="#F97141" points="557.6,104.5 557.6,0.6 523.4,0.6 523.4,169.8 557.6,169.8 557.6,111.2">
+        </polyline>
+        <polygon fill="#F97141" points="713.5,0 679.3,0 679.3,43.3 649.8,43.3 649.8,73.3 679.3,73.3 679.3,169.4 713.5,169.4 713.5,73.3 743,73.3 743,43.3 713.5,43.3 ">
+        </polygon>
+        <path fill="#F97141" d="M199.9,50.2c-9.4-5.8-20.3-8.8-31.4-8.6c-8.5-0.1-16.9,1.8-24.4,5.7c-4.2,2.2-8,5-11.4,8.2V43.4H98.5V212h34 v-52.9c3.4,3.3,7.3,6,11.5,8.1c7.6,3.8,16,5.7,24.5,5.6c11.1,0.2,21.9-2.8,31.3-8.6c9.2-5.7,16.8-13.9,21.8-23.5 c5.4-10.3,8.2-21.8,8-33.4c0-12.5-2.7-23.8-8-33.7C216.6,64.1,209.1,56,199.9,50.2z M190.6,125.1c-2.6,5-6.5,9.2-11.4,12 c-5.1,2.9-10.9,4.4-16.7,4.3c-5.8,0.1-11.5-1.4-16.5-4.3c-4.8-2.9-8.7-7-11.2-12c-2.8-5.5-4.2-11.7-4-17.9c-0.1-6.1,1.3-12.2,4-17.6 c2.6-5,6.5-9.2,11.4-12c5-2.9,10.7-4.4,16.4-4.3c5.9-0.1,11.6,1.4,16.7,4.3c4.8,2.8,8.8,7,11.4,12c2.8,5.5,4.1, 11.5,4,17.6 C194.8,113.4,193.4,119.5,190.6,125.1z">
+        </path>
+        <rect x="-126.1" y="-126.1" fill="none" width="1087.5" height="464.3"></rect>
+      </svg>
+    </a>
+    <a class="nav-link" href="#">Tour</a>
+    <a class="nav-link" href="#">Product</a>
+    <a class="nav-link" href="#">Features</a>
+    <a class="nav-link" href="#">Enterprise</a>
+    <a class="nav-link" href="#">Support</a>
+    <a class="nav-link" href="#">Pricing</a>
+    <a class="nav-link" href="#">Cart</a>
+  </nav>
+</header>
+<main>
+  <div class="container-fluid position-relative overflow-hidden text-center bg-light">
+    <div class="col-md-5 p-lg-4 mx-auto my-4">
+      <h1>Punny headline</h1>
+      <p class="lead">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based
+        on Apple’s marketing pages.</p>
+      <a class="btn btn-outline-secondary" href="#">Coming soon</a>
+    </div>
+    <div class="product-device shadow-sm d-none d-xl-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-xl-block"></div>
+  </div>
+  <div class="container overflow-hidden text-center">
+    <div class="row gy-4">
+      <div class="col-6 gx-4">
+        <div class="bg-dark text-white overflow-hidden">
+          <div class="p-4 mt-4">
+            <h2 class="display-5">Another headline</h2>
+            <p class="lead">And an even wittier subheading.</p>
+          </div>
+          <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 18.75rem; border-radius: 1.3125rem 1.3125rem 0 0;">
+          </div>
+        </div>
+      </div>
+      <div class="col-6 gx-4">
+        <div class="bg-light overflow-hidden">
+          <div class="p-4 mt-4">
+            <h2 class="display-5">Another headline</h2>
+            <p class="lead">And an even wittier subheading.</p>
+          </div>
+          <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 18.75rem; border-radius: 1.3125rem 1.3125rem 0 0;"></div>
+        </div>
+      </div>
+      <div class="col-6 gx-4">
+        <div class="bg-dark text-secondary overflow-hidden">
+          <div class="p-4 mt-4">
+            <h2 class="display-5">Another headline</h2>
+            <p class="lead">And an even wittier subheading.</p>
+          </div>
+          <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 18.75rem; border-radius: 1.3125rem 1.3125rem 0 0;">
+          </div>
+        </div>
+      </div>
+      <div class="col-6 gx-4">
+        <div class="bg-secondary overflow-hidden">
+          <div class="p-4 mt-4">
+            <h2 class="display-5">Another headline</h2>
+            <p class="lead">And an even wittier subheading.</p>
+          </div>
+          <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 18.75rem; border-radius: 1.3125rem 1.3125rem 0 0;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="container-fluid bg-dark text-white">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-12 col-md">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 837 212" class="pe-3" height="32">
+          <polygon fill="#F97141" points="788.2,43.5 747.4,43.5 799.6,106.5 747.4,169.6 788.2,169.6 837,106.5">
+          </polygon>
+          <polygon fill="#F97141" points="603.4,43.5 644.1,43.5 592,106.5 644.1,169.6 603.4,169.6 554.5,106.5">
+          </polygon>
+          <polygon fill="#F97141" points="48.9,43.5 89.6,43.5 37.5,106.5 89.6,169.6 48.9,169.6 0,106.5"></polygon>
+          <path fill="#F97141"
+            d="M340.5,55.7c-3.5-3.7-7.7-6.8-12.3-9.2c-7.5-3.7-15.9-5.6-24.3-5.5c-11-0.1-21.7,2.8-31.1,8.6 c-9.2,5.7-16.7,13.8-21.7,23.5c-5.2,9.9-7.8,21.2-7.8,33.7c-0.2,11.6,2.5,23.1,7.8,33.4c5,9.7,12.5,17.8,21.7,23.5 c9.3,5.8,20.1,8.8,31.1,8.6c8.4,0.1,16.8-1.8,24.3-5.6c4.6-2.4,8.7-5.5,12.3-9.2v12.2h34v-126h-34V55.7z M333.5,131.3 c-5.9,6.4-13.7,9.5-23.2,9.5c-5.8,0.1-11.6-1.4-16.6-4.3c-4.8-2.9-8.7-7-11.2-12c-2.8-5.5-4.2-11.7-4-17.9c-0.1-6.1,1.3-12.2,4-17.6 c2.5-5,6.4-9.1,11.2-12c5-2.9,10.8-4.4,16.6-4.3c5.9-0.1,11.7,1.4,16.8,4.3c4.8,2.9,8.7,7,11.2,12c2.8,5.5,4.1,11.5,4,17.6 C342.3,116.7,339.3,124.9,333.5,131.3L333.5,131.3z">
+          </path>
+          <path fill="#F97141"
+            d="M475.9,137.5c-4.9,2.1-10.2,3.1-15.5,3c-5.9,0.1-11.7-1.4-16.8-4.3c-4.9-2.8-9-7-11.8-12 c-2.9-5.4-4.4-11.5-4.3-17.6c-0.2-6.2,1.3-12.2,4.3-17.6c2.8-4.9,6.9-8.9,11.8-11.8c5.1-2.9,10.9-4.4,16.8-4.3 c5.2-0.1,10.4,0.9,15.3,2.9c4.5,1.9,8.6,4.7,11.9,8.4L509.5,62c-6-6.7-13.4-12.1-21.7-15.7c-8.7-3.7-18-5.6-27.4-5.5 c-12.1-0.2-24,2.9-34.6,8.8c-10.1,5.6-18.5,13.7-24.4,23.6s-8.9,21.2-8.9,33.7c-0.3,23.7,12.4,45.6,33.2,56.9 c10.3,5.8,21.8,8.6,34.7,8.6c9.4,0.1,18.8-1.8,27.4-5.5c8.4-3.7,16-9.1,22.2-15.9l-22.2-22.2C484.5,132.6,480.4,135.6,475.9,137.5z">
+          </path>
+          <polyline fill="#F97141" points="557.6,104.5 557.6,0.6 523.4,0.6 523.4,169.8 557.6,169.8 557.6,111.2">
+          </polyline>
+          <polygon fill="#F97141"
+            points="713.5,0 679.3,0 679.3,43.3 649.8,43.3 649.8,73.3 679.3,73.3 679.3,169.4 713.5,169.4 713.5,73.3 743,73.3 743,43.3 713.5,43.3 ">
+          </polygon>
+          <path fill="#F97141"
+            d="M199.9,50.2c-9.4-5.8-20.3-8.8-31.4-8.6c-8.5-0.1-16.9,1.8-24.4,5.7c-4.2,2.2-8,5-11.4,8.2V43.4H98.5V212h34 v-52.9c3.4,3.3,7.3,6,11.5,8.1c7.6,3.8,16,5.7,24.5,5.6c11.1,0.2,21.9-2.8,31.3-8.6c9.2-5.7,16.8-13.9,21.8-23.5 c5.4-10.3,8.2-21.8,8-33.4c0-12.5-2.7-23.8-8-33.7C216.6,64.1,209.1,56,199.9,50.2z M190.6,125.1c-2.6,5-6.5,9.2-11.4,12 c-5.1,2.9-10.9,4.4-16.7,4.3c-5.8,0.1-11.5-1.4-16.5-4.3c-4.8-2.9-8.7-7-11.2-12c-2.8-5.5-4.2-11.7-4-17.9c-0.1-6.1,1.3-12.2,4-17.6 c2.6-5,6.5-9.2,11.4-12c5-2.9,10.7-4.4,16.4-4.3c5.9-0.1,11.6,1.4,16.7,4.3c4.8,2.8,8.8,7,11.4,12c2.8,5.5,4.1, 11.5,4,17.6 C194.8,113.4,193.4,119.5,190.6,125.1z">
+          </path>
+          <rect x="-126.1" y="-126.1" fill="none" width="1087.5" height="464.3"></rect>
+        </svg>
+        <title>Product</title>
+        <circle cx="12" cy="12" r="10" />
+        <path
+          d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94" />
+        </svg>
+        <small class="d-block mb-3 text-muted">&copy; 2017–2022</small>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Features</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="link-secondary" href="#">Cool stuff</a></li>
+          <li><a class="link-secondary" href="#">Random feature</a></li>
+          <li><a class="link-secondary" href="#">Team feature</a></li>
+          <li><a class="link-secondary" href="#">Stuff for developers</a></li>
+          <li><a class="link-secondary" href="#">Another one</a></li>
+          <li><a class="link-secondary" href="#">Last time</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Resources</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="link-secondary" href="#">Resource name</a></li>
+          <li><a class="link-secondary" href="#">Resource</a></li>
+          <li><a class="link-secondary" href="#">Another resource</a></li>
+          <li><a class="link-secondary" href="#">Final resource</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Resources</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="link-secondary" href="#">Business</a></li>
+          <li><a class="link-secondary" href="#">Education</a></li>
+          <li><a class="link-secondary" href="#">Government</a></li>
+          <li><a class="link-secondary" href="#">Gaming</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>About</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="link-secondary" href="#">Team</a></li>
+          <li><a class="link-secondary" href="#">Locations</a></li>
+          <li><a class="link-secondary" href="#">Privacy</a></li>
+          <li><a class="link-secondary" href="#">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script src="/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+  
+    </body>
+
+    
+    
+    
+
+</html>

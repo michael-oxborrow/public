@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en" >
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Michael Oxborrow, Prince Pal">
+  <meta name="generator" content="Hugo 0.101.0">
+  <title>Question · Packt Design Guide v5.2</title>
+
+  <link rel="canonical" href="https://design.packt.com/docs/5.2/packt-templates/question/">
+  
+  
+  
+
+  
+
+  
+
+<link href="/css/packt.min.css" rel="stylesheet">
+
+  <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" crossorigin="use-credentials" href="/docs/5.2/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#712cf9">
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-divider {
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+  </style>
+  
+</head>
+<body>
+  <style>
+.question-progress {
+    height: 10px;
+    max-width: 561px;
+    margin: 30px auto 50px;
+    position: relative;
+    overflow: visible;
+}
+.question-progress .progress-bar:after {
+    content: attr(aria-valuenow)'%';
+    position: absolute;
+    bottom: -20px;
+    color: #2b2b2b;
+    font-size: 14px;
+    right: -15px;
+}
+.question-progress .progress-bar {
+    position: relative;
+    overflow: visible;
+}
+.input-icons {
+    position: relative;
+}
+.input-icons .form-control {
+    padding-left: 40px;
+}
+.input-icons svg {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+}
+.input-icons .form-control:focus,
+.input-icons .form-control:focus + svg {
+    color: #f97141;
+}
+@media (min-width: 1200px) {
+.login-card:before {
+    content: "";
+    background: url('/docs/5.2/assets/img/packt-templates/author-sight/icon-left-caret.svg') no-repeat, center;
+    background-size: cover;
+    height: 232px;
+    width: 103px;
+    position: absolute;
+    left: calc(-40% - -50px);
+    top: 0;
+}
+.login-card:after {
+    content: "";
+    background: url('/docs/5.2/assets/img/packt-templates/author-sight/icon-right-caret.svg') no-repeat, center;
+    background-size: cover;
+    height: 232px;
+    width: 103px;
+    position: absolute;
+    right: calc(-40% - -50px);
+    bottom: 0;
+}
+}
+</style>
+<header>
+
+</header>
+<main>
+    <div class="container-fluid min-vh-100 p-3 d-flex align-items-center justify-content-center" style="background: url(/docs/5.2/assets/img/packt-templates/author-sight/login-background.svg) no-repeat, center;background-size: cover;">
+        <div class="card rounded-4 shadow md-p-5 px-3 py-5 border-0 text-center w-100 login-card" style="max-width: 787px;">
+            <img src="../../assets/brand/packt-logo.svg" height="78" width="167" class="m-auto mb-4" alt="Logo">
+            <form class="pb-2">
+                <div class="progress question-progress">
+                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h4 class="fw-normal">What type of request are you submitting?</h4>
+                <div class="form-group text-start my-4 m-auto input-icons" style="max-width: 479px;">
+                    <input class="form-control rounded-3 py-2" type="text" placeholder="My own request">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17.393" height="19.431" viewBox="0 0 17.393 19.431">
+                        <g id="Group_12352" data-name="Group 12352" transform="translate(-24.165)">
+                          <g id="Group_12189" data-name="Group 12189" transform="translate(24.165)">
+                            <g id="Group_12188" data-name="Group 12188" transform="translate(0)">
+                              <g id="Group_12187" data-name="Group 12187">
+                                <path id="Path_11336" data-name="Path 11336" d="M115.837,10.09a5.045,5.045,0,1,0-5.045-5.045A5.058,5.058,0,0,0,115.837,10.09Z" transform="translate(-107.139)" fill="currentColor"/>
+                                <path id="Path_11337" data-name="Path 11337" d="M41.521,251.511a4.7,4.7,0,0,0-.507-.925,6.271,6.271,0,0,0-4.34-2.732.929.929,0,0,0-.639.154,5.378,5.378,0,0,1-6.345,0,.827.827,0,0,0-.639-.154,6.225,6.225,0,0,0-4.34,2.732,5.423,5.423,0,0,0-.507.925.469.469,0,0,0,.022.419,8.785,8.785,0,0,0,.595.881,8.372,8.372,0,0,0,1.013,1.146,13.193,13.193,0,0,0,1.013.881,10.046,10.046,0,0,0,11.985,0,9.679,9.679,0,0,0,1.013-.881,10.176,10.176,0,0,0,1.013-1.146,7.719,7.719,0,0,0,.595-.881A.376.376,0,0,0,41.521,251.511Z" transform="translate(-24.165 -237.39)" fill="currentColor"/>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                    </svg>
+                </div>
+                <div class="form-group text-start my-4 m-auto input-icons" style="max-width: 479px;">
+                    <input class="form-control rounded-3 py-2" type="text" placeholder="Referring a friend/colleague">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19.263" height="19.31" viewBox="0 0 19.263 19.31">
+                        <g id="Group_12351" data-name="Group 12351" transform="translate(-0.642)">
+                          <g id="Group_1065" data-name="Group 1065" transform="translate(2.36 0.657)">
+                            <g id="Group_1064" data-name="Group 1064">
+                              <path id="Path_543" data-name="Path 543" d="M52.055,17.43l-.554.99.94.526A8.265,8.265,0,0,0,46.2,26.958q0,.342.028.681a3.775,3.775,0,0,1,1.107-.775,7.13,7.13,0,0,1,5.474-6.84l-.873,1.051.872.725,2.239-2.7Z" transform="translate(-46.196 -17.43)" fill="currentColor"/>
+                            </g>
+                          </g>
+                          <g id="Group_1067" data-name="Group 1067" transform="translate(10.954 9.556)">
+                            <g id="Group_1066" data-name="Group 1066">
+                              <path id="Path_544" data-name="Path 544" d="M281.949,253.369h-1.137q.024.294.024.591a7.129,7.129,0,0,1-4.7,6.7l.747-1.17-.956-.611-1.887,2.953,3.173,1.29.427-1.051-.979-.4a8.262,8.262,0,0,0,5.305-7.714Q281.97,253.664,281.949,253.369Z" transform="translate(-274.044 -253.369)" fill="currentColor"/>
+                            </g>
+                          </g>
+                          <g id="Group_1069" data-name="Group 1069" transform="translate(0.642 10.885)">
+                            <g id="Group_1068" data-name="Group 1068">
+                              <path id="Path_545" data-name="Path 545" d="M7.039,292.944a2.626,2.626,0,1,0-3.958,0,3.743,3.743,0,0,0-2.439,3.5v.567H9.485v-.567A3.743,3.743,0,0,0,7.039,292.944Z" transform="translate(-0.642 -288.596)" fill="currentColor"/>
+                            </g>
+                          </g>
+                          <g id="Group_1071" data-name="Group 1071" transform="translate(11.061)">
+                            <g id="Group_1070" data-name="Group 1070">
+                              <path id="Path_546" data-name="Path 546" d="M283.281,4.348a2.626,2.626,0,1,0-3.958,0,3.743,3.743,0,0,0-2.439,3.5v.567h8.843V7.855A3.743,3.743,0,0,0,283.281,4.348Z" transform="translate(-276.884)" fill="currentColor"/>
+                            </g>
+                          </g>
+                        </g>
+                    </svg>
+                </div>
+                <div class="text-center pt-4">
+                    <button type="button" class="btn btn-primary rounded-pill py-2 px-4 w-100" style="max-width: 150px;">NEXT</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+<footer>
+
+</footer>
+
+  <script src="/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+  
+    </body>
+
+    
+    
+    
+
+</html>

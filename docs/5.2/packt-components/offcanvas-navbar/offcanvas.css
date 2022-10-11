@@ -1,0 +1,52 @@
+html,
+body {
+  overflow-x: hidden;
+   /* Prevent scroll on narrow devices */
+}
+
+body {
+  padding-top: 5.5rem;
+}
+
+@media (max-width: 61.9988rem) {
+  
+  .offcanvas-collapse {
+    background-color: hsl(210, 10%, 23%);
+    bottom: 0;
+    left: 100%;
+    overflow-y: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: fixed;
+    top: 3.5rem;
+    transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+    visibility: hidden;
+    width: 100%;
+    
+     /* Height of navbar */
+  }
+  .offcanvas-collapse.open {
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+}
+
+.nav-scroller .nav {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.nav-scroller .nav-link {
+  color: hsl(208, 7%, 46%);
+  font-size: .875rem;
+  padding-bottom: .75rem;
+  padding-top: .75rem;
+}
+
+.nav-scroller .nav-link:hover {
+  color: hsl(16, 94%, 62%);
+}
+
+.nav-scroller .active {
+  color: hsl(210, 10%, 23%);
+  font-weight: 500;
+}

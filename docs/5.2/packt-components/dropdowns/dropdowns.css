@@ -1,0 +1,84 @@
+.dropdown-menu {
+  margin: 4rem auto;
+}
+
+.dropdown-item-danger {
+  color: var(--pt-red);
+}
+.dropdown-item-danger:hover,
+.dropdown-item-danger:focus {
+  color: hsl(0, 0%, 100%);
+  background-color: var(--pt-red);
+}
+.dropdown-item-danger.active {
+  background-color: var(--pt-red);
+}
+
+.btn-hover-light {
+  background-color: var(--pt-white);
+}
+
+.btn-hover-light:hover,
+.btn-hover-light:focus {
+  color: var(--pt-secondary);
+  background-color: var(--pt-light);
+}
+
+.cal-month,
+.cal-days,
+.cal-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+}
+
+.cal-month-name {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  text-align: center;
+}
+
+.cal-weekday,
+.cal-btn {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  padding: 0;
+}
+
+.cal-btn:not([disabled]) {
+  font-weight: 500;
+}
+
+.cal-btn:hover,
+.cal-btn:focus {
+  background-color: hsla(0, 0%, 0%, 0.05);
+}
+
+.cal-btn[disabled] {
+  border: 0;
+  opacity: .5;
+}
+
+.form-control-dark {
+  background-color: hsla(0, 0%, 100%, 0.05);
+  border-color: hsla(0, 0%, 100%, 0.15);
+}
+
+.w-220px {
+  width: 13.75rem;
+}
+
+.w-280px {
+  width: 17.5rem;
+}
+
+.w-340px {
+  width: 21.25rem;
+}
+
+.w-600px {
+  width: 37.5rem;
+}

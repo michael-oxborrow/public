@@ -2403,7 +2403,7 @@
   margin-right: 0.75rem;
 }
 
-.bd-placeholder-img {
+.placeholder-img {
   font-size: 1.125rem;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -2412,11 +2412,11 @@
   text-anchor: middle;
 }
 
-.bd-placeholder-img-lg {
+.placeholder-img-lg {
   font-size: calc(1.475rem + 2.7vw);
 }
 @media (min-width: 1200px) {
-  .bd-placeholder-img-lg {
+  .placeholder-img-lg {
     font-size: 3.5rem;
   }
 }

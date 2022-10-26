@@ -409,7 +409,7 @@
       </div>
 
       
-        <div class="bd-toc mt-3 mb-5 my-lg-0 ps-xl-3 mb-lg-5 text-muted">
+        <div class="bd-toc mt-3 mb-5 my-lg-0 ps-xl-4 mb-lg-5 text-muted">
           <button class="btn btn-link link-dark p-md-0 mb-2 mb-md-0 text-decoration-none bd-toc-toggle d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#tocContents" aria-expanded="false" aria-controls="tocContents">
             On this page
             <svg class="bi d-md-none ms-2" aria-hidden="true"><use xlink:href="#chevron-expand"></use></svg>
@@ -438,6 +438,7 @@
     </li>
     <li><a href="#lists">Lists</a>
       <ul>
+        <li><a href="#default">Default</a></li>
         <li><a href="#unstyled">Unstyled</a></li>
         <li><a href="#inline">Inline</a></li>
         <li><a href="#description-list-alignment">Description list alignment</a></li>
@@ -783,6 +784,44 @@
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">figure</span><span class="p">&gt;</span></span></span></code></pre></div></div>
 
 <h2 id="lists">Lists <a class="anchor-link" href="#lists" aria-label="Link to this section: Lists"></a></h2>
+<h3 id="default">Default <a class="anchor-link" href="#default" aria-label="Link to this section: Default"></a></h3>
+<p>Remove the default <code>list-style</code> and left margin on list items (immediate children only). <strong>This only applies to immediate children list items</strong>, meaning you will need to add the class for any nested lists as well.</p>
+<div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
+<ul>
+  <li>This is a list.</li>
+  <li>It appears styled.</li>
+  <li>Structurally, it's a list.</li>
+  <li>Nested lists:
+    <ul>
+      <li>have their own</li>
+      <li>bullet style applied</li>
+      <li>and have appropriate left margin</li>
+    </ul>
+  </li>
+</ul>
+</div><div class="d-flex align-items-center highlight-toolbar bg-light ps-3 pe-2 py-1">
+        <small class="font-monospace text-muted text-uppercase">html</small>
+        <div class="d-flex ms-auto">
+          <button type="button" class="btn-edit text-nowrap" title="Try it on StackBlitz">
+            <svg class="bi" role="img" aria-label="Try it"><use xlink:href="#lightning-charge-fill"/></svg>
+          </button>
+          <button type="button" class="btn-clipboard mt-0 me-0" title="Copy to clipboard">
+            <svg class="bi" role="img" aria-label="Copy"><use xlink:href="#clipboard"/></svg>
+          </button>
+        </div>
+      </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>This is a list.<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>It appears styled.<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Structurally, it&#39;s a list.<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Nested lists:
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>have their own<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>bullet style applied<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>and have appropriate left margin<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span></span></span></code></pre></div></div>
+
 <h3 id="unstyled">Unstyled <a class="anchor-link" href="#unstyled" aria-label="Link to this section: Unstyled"></a></h3>
 <p>Remove the default <code>list-style</code> and left margin on list items (immediate children only). <strong>This only applies to immediate children list items</strong>, meaning you will need to add the class for any nested lists as well.</p>
 <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">

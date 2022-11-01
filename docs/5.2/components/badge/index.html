@@ -409,7 +409,7 @@
       </div>
 
       
-        <div class="bd-toc mt-3 mb-5 my-lg-0 ps-xl-4 mb-lg-5 text-muted">
+        <div class="bd-toc mt-3 mb-5 my-lg-0 ps-lg-4 ps-xl-4 mb-lg-5 text-muted">
           <button class="btn btn-link link-dark p-md-0 mb-2 mb-md-0 text-decoration-none bd-toc-toggle d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#tocContents" aria-expanded="false" aria-controls="tocContents">
             On this page
             <svg class="bi d-md-none ms-2" aria-hidden="true"><use xlink:href="#chevron-expand"></use></svg>
@@ -634,20 +634,44 @@
 <small class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-success bg-success bg-opacity-10 border border-success border-opacity-10 rounded-2">Added in v5.2.0</small>
 
 <p>As part of Bootstrap&rsquo;s evolving CSS variables approach, badges now use local CSS variables on <code>.badge</code> for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl">  <span class="na">--#{$prefix}badge-padding-x</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$badge-padding-x</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}badge-padding-y</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$badge-padding-y</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="k">@include</span><span class="nd"> rfs</span><span class="p">(</span><span class="nv">$badge-font-size</span><span class="o">,</span> <span class="o">--</span><span class="si">#{</span><span class="nv">$prefix</span><span class="si">}</span><span class="n">badge-font-size</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}badge-font-weight</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$badge-font-weight</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}badge-color</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$badge-color</span><span class="si">}</span><span class="p">;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl">  <span class="k">@include</span><span class="nd"> rfs</span><span class="p">(</span><span class="nv">$badge-font-size</span><span class="o">,</span> <span class="o">--</span><span class="si">#{</span><span class="nv">$prefix</span><span class="si">}</span><span class="n">badge-font-size</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}badge-border-radius</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$badge-border-radius</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}badge-close-margin-s</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$badge-close-margin-s</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}badge-close-padding</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$badge-close-padding</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}badge-close-padding-e</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$badge-close-padding-e</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}badge-color</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$badge-color</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}badge-font-weight</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$badge-font-weight</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}badge-line-height</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$badge-line-height</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}badge-margin-x</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$badge-margin-x</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}badge-margin-y</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$badge-margin-y</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}badge-padding-x</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$badge-padding-x</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}badge-padding-y</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$badge-padding-y</span><span class="si">}</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  </span></span></code></pre></div>
 <h3 id="sass-variables">Sass variables <a class="anchor-link" href="#sass-variables" aria-label="Link to this section: Sass variables"></a></h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="nv">$badge-font-size</span><span class="o">:</span>                   <span class="mf">.75</span><span class="kt">em</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$badge-font-weight</span><span class="o">:</span>                 <span class="nv">$font-weight-bold</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$badge-color</span><span class="o">:</span>                       <span class="nv">$white</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$badge-padding-y</span><span class="o">:</span>                   <span class="mf">.35</span><span class="kt">em</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$badge-padding-x</span><span class="o">:</span>                   <span class="mf">.65</span><span class="kt">em</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$badge-border-radius</span><span class="o">:</span>               <span class="nv">$border-radius</span><span class="p">;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="nv">$badge-border-radius</span><span class="o">:</span>                     <span class="mi">50</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$badge-close-margin-s</span><span class="o">:</span>                    <span class="mf">.3125</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$badge-close-padding</span><span class="o">:</span>                     <span class="mf">.1875</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$badge-close-padding-e</span><span class="o">:</span>                   <span class="mf">.125</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$badge-font-size</span><span class="o">:</span>                         <span class="mf">.875</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$badge-font-size-sm</span><span class="o">:</span>                      <span class="mf">.75</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$badge-font-size-lg</span><span class="o">:</span>                      <span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$badge-font-weight</span><span class="o">:</span>                       <span class="nv">$font-weight-semibold</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$badge-color</span><span class="o">:</span>                             <span class="nv">$white</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$badge-line-height</span><span class="o">:</span>                       <span class="nv">$badge-font-size</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$badge-line-height-sm</span><span class="o">:</span>                    <span class="mf">.75</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$badge-line-height-lg</span><span class="o">:</span>                    <span class="nv">$badge-font-size</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$badge-margin-x</span><span class="o">:</span>                          <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$badge-margin-y</span><span class="o">:</span>                          <span class="mf">.5625</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$badge-margin-x-sm</span><span class="o">:</span>                       <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$badge-margin-y-sm</span><span class="o">:</span>                       <span class="mf">.8125</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$badge-margin-x-lg</span><span class="o">:</span>                       <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$badge-margin-y-lg</span><span class="o">:</span>                       <span class="mf">.25</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$badge-padding-x</span><span class="o">:</span>                         <span class="mi">1</span><span class="mf">.5</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$badge-padding-y</span><span class="o">:</span>                         <span class="mf">.4375</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$badge-padding-x-sm</span><span class="o">:</span>                      <span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$badge-padding-y-sm</span><span class="o">:</span>                      <span class="mf">.25</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$badge-padding-x-lg</span><span class="o">:</span>                      <span class="mf">.75</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$badge-padding-y-lg</span><span class="o">:</span>                      <span class="mi">2</span><span class="kt">rem</span><span class="p">;</span>
 </span></span></code></pre></div>
 
       </div>

@@ -424,6 +424,11 @@
         <li><a href="#one-line-list">One Line List</a></li>
         <li><a href="#two-line-list">Two Line List</a></li>
         <li><a href="#two-line-list-with-icon">Two Line List with icon</a></li>
+        <li><a href="#two-line-list-with-avatar">Two Line List with avatar</a>
+          <ul>
+            <li><a href="#dark">Dark</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
     <li><a href="#basic-example">Basic example</a></li>
@@ -433,7 +438,6 @@
     <li><a href="#flush">Flush</a></li>
     <li><a href="#numbered">Numbered</a></li>
     <li><a href="#horizontal">Horizontal</a></li>
-    <li><a href="#contextual-classes">Contextual classes</a></li>
     <li><a href="#with-badges">With badges</a></li>
     <li><a href="#custom-content">Custom content</a></li>
     <li><a href="#checkboxes-and-radios">Checkboxes and radios</a></li>
@@ -475,19 +479,19 @@
 <h3 id="one-line-list">One Line List <a class="anchor-link" href="#one-line-list" aria-label="Link to this section: One Line List"></a></h3>
 <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
 <ul class="list-group">
-  <li class="list-group-item-action list-group-item p-3 d-flex align-items-center justify-content-between">
+  <li class="list-group-item-action list-group-item d-flex align-items-center justify-content-between">
     <span>Row item</span>
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16"><path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/></svg>
   </li>
-  <li class="list-group-item-action list-group-item p-3 d-flex align-items-center justify-content-between">
+  <li class="list-group-item-action list-group-item d-flex align-items-center justify-content-between">
     <span>Row item</span>
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16"><path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/></svg>
   </li>
-  <li class="list-group-item-action list-group-item p-3 d-flex align-items-center justify-content-between">
+  <li class="list-group-item-action list-group-item d-flex align-items-center justify-content-between">
     <span>Row item</span>
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16"><path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/></svg>
   </li>
-  <li class="list-group-item-action list-group-item p-3 d-flex align-items-center justify-content-between">
+  <li class="list-group-item-action list-group-item d-flex align-items-center justify-content-between">
     <span>Row item</span>
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16"><path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/></svg>
   </li>
@@ -503,19 +507,19 @@
           </button>
         </div>
       </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item-action list-group-item p-3 d-flex align-items-center justify-content-between&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item-action list-group-item d-flex align-items-center justify-content-between&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>Row item<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">svg</span> <span class="na">xmlns</span><span class="o">=</span><span class="s">&#34;http://www.w3.org/2000/svg&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;16&#34;</span> <span class="na">height</span><span class="o">=</span><span class="s">&#34;16&#34;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&#34;currentColor&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;bi bi-three-dots-vertical&#34;</span> <span class="na">viewBox</span><span class="o">=</span><span class="s">&#34;0 0 16 16&#34;</span><span class="p">&gt;&lt;</span><span class="nt">path</span> <span class="na">d</span><span class="o">=</span><span class="s">&#34;M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z&#34;</span><span class="p">/&gt;&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item-action list-group-item p-3 d-flex align-items-center justify-content-between&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item-action list-group-item d-flex align-items-center justify-content-between&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>Row item<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">svg</span> <span class="na">xmlns</span><span class="o">=</span><span class="s">&#34;http://www.w3.org/2000/svg&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;16&#34;</span> <span class="na">height</span><span class="o">=</span><span class="s">&#34;16&#34;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&#34;currentColor&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;bi bi-three-dots-vertical&#34;</span> <span class="na">viewBox</span><span class="o">=</span><span class="s">&#34;0 0 16 16&#34;</span><span class="p">&gt;&lt;</span><span class="nt">path</span> <span class="na">d</span><span class="o">=</span><span class="s">&#34;M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z&#34;</span><span class="p">/&gt;&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item-action list-group-item p-3 d-flex align-items-center justify-content-between&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item-action list-group-item d-flex align-items-center justify-content-between&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>Row item<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">svg</span> <span class="na">xmlns</span><span class="o">=</span><span class="s">&#34;http://www.w3.org/2000/svg&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;16&#34;</span> <span class="na">height</span><span class="o">=</span><span class="s">&#34;16&#34;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&#34;currentColor&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;bi bi-three-dots-vertical&#34;</span> <span class="na">viewBox</span><span class="o">=</span><span class="s">&#34;0 0 16 16&#34;</span><span class="p">&gt;&lt;</span><span class="nt">path</span> <span class="na">d</span><span class="o">=</span><span class="s">&#34;M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z&#34;</span><span class="p">/&gt;&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item-action list-group-item p-3 d-flex align-items-center justify-content-between&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item-action list-group-item d-flex align-items-center justify-content-between&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>Row item<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">svg</span> <span class="na">xmlns</span><span class="o">=</span><span class="s">&#34;http://www.w3.org/2000/svg&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;16&#34;</span> <span class="na">height</span><span class="o">=</span><span class="s">&#34;16&#34;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&#34;currentColor&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;bi bi-three-dots-vertical&#34;</span> <span class="na">viewBox</span><span class="o">=</span><span class="s">&#34;0 0 16 16&#34;</span><span class="p">&gt;&lt;</span><span class="nt">path</span> <span class="na">d</span><span class="o">=</span><span class="s">&#34;M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z&#34;</span><span class="p">/&gt;&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
@@ -527,25 +531,25 @@
   <li class="list-group-item-action list-group-item d-flex justify-content-between align-items-start">
     <div class="me-auto">
       <div class="fw-bold">Row item</div>
-      <span class="text-muted">Lorem ipsum dolor sit amet, consectetur...</span>
+      <span class="list-group-text">Lorem ipsum dolor sit amet, consectetur...</span>
     </div>
   </li>
   <li class="list-group-item-action list-group-item d-flex justify-content-between align-items-start">
     <div class="me-auto">
       <div class="fw-bold">Row item</div>
-      <span class="text-muted">Lorem ipsum dolor sit amet, consectetur...</span>
+      <span class="list-group-text">Lorem ipsum dolor sit amet, consectetur...</span>
     </div>
   </li>
   <li class="list-group-item-action list-group-item d-flex justify-content-between align-items-start">
     <div class="me-auto">
       <div class="fw-bold">Row item</div>
-      <span class="text-muted">Lorem ipsum dolor sit amet, consectetur...</span>
+      <span class="list-group-text">Lorem ipsum dolor sit amet, consectetur...</span>
     </div>
   </li>
   <li class="list-group-item-action list-group-item d-flex justify-content-between align-items-start">
     <div class="me-auto">
       <div class="fw-bold">Row item</div>
-      <span class="text-muted">Lorem ipsum dolor sit amet, consectetur...</span>
+      <span class="list-group-text">Lorem ipsum dolor sit amet, consectetur...</span>
     </div>
   </li>
 </ol>
@@ -563,25 +567,25 @@
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item-action list-group-item d-flex justify-content-between align-items-start&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;me-auto&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;fw-bold&#34;</span><span class="p">&gt;</span>Row item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text-muted&#34;</span><span class="p">&gt;</span>Lorem ipsum dolor sit amet, consectetur...<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-text&#34;</span><span class="p">&gt;</span>Lorem ipsum dolor sit amet, consectetur...<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item-action list-group-item d-flex justify-content-between align-items-start&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;me-auto&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;fw-bold&#34;</span><span class="p">&gt;</span>Row item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text-muted&#34;</span><span class="p">&gt;</span>Lorem ipsum dolor sit amet, consectetur...<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-text&#34;</span><span class="p">&gt;</span>Lorem ipsum dolor sit amet, consectetur...<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item-action list-group-item d-flex justify-content-between align-items-start&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;me-auto&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;fw-bold&#34;</span><span class="p">&gt;</span>Row item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text-muted&#34;</span><span class="p">&gt;</span>Lorem ipsum dolor sit amet, consectetur...<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-text&#34;</span><span class="p">&gt;</span>Lorem ipsum dolor sit amet, consectetur...<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item-action list-group-item d-flex justify-content-between align-items-start&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;me-auto&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;fw-bold&#34;</span><span class="p">&gt;</span>Row item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text-muted&#34;</span><span class="p">&gt;</span>Lorem ipsum dolor sit amet, consectetur...<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-text&#34;</span><span class="p">&gt;</span>Lorem ipsum dolor sit amet, consectetur...<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span></span></span></code></pre></div></div>
@@ -593,28 +597,21 @@
     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" viewBox="0 0 16 16"><path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/><path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/></svg>
     <div class="ms-3 me-auto">
       <div class="fw-bold">Row item</div>
-      <span class="text-muted">Lorem ipsum dolor sit amet, consectetur...</span>
+      <span class="list-group-text">Lorem ipsum dolor sit amet...</span>
     </div>
   </li>
   <li class="list-group-item-action list-group-item d-flex justify-content-between align-items-center">
     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" viewBox="0 0 16 16"><path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/><path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/></svg>
     <div class="ms-3 me-auto">
       <div class="fw-bold">Row item</div>
-      <span class="text-muted">Lorem ipsum dolor sit amet, consectetur...</span>
+      <span class="list-group-text">Lorem ipsum dolor sit amet...</span>
     </div>
   </li>
   <li class="list-group-item-action list-group-item d-flex justify-content-between align-items-center">
     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" viewBox="0 0 16 16"><path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/><path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/></svg>
     <div class="ms-3 me-auto">
       <div class="fw-bold">Row item</div>
-      <span class="text-muted">Lorem ipsum dolor sit amet, consectetur...</span>
-    </div>
-  </li>
-  <li class="list-group-item-action list-group-item d-flex justify-content-between align-items-center">
-    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" viewBox="0 0 16 16"><path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/><path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/></svg>
-    <div class="ms-3 me-auto">
-      <div class="fw-bold">Row item</div>
-      <span class="text-muted">Lorem ipsum dolor sit amet, consectetur...</span>
+      <span class="list-group-text">Lorem ipsum dolor sit amet...</span>
     </div>
   </li>
 </ol>
@@ -633,28 +630,139 @@
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">svg</span> <span class="na">xmlns</span><span class="o">=</span><span class="s">&#34;http://www.w3.org/2000/svg&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;35&#34;</span> <span class="na">height</span><span class="o">=</span><span class="s">&#34;35&#34;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&#34;currentColor&#34;</span> <span class="na">viewBox</span><span class="o">=</span><span class="s">&#34;0 0 16 16&#34;</span><span class="p">&gt;&lt;</span><span class="nt">path</span> <span class="na">d</span><span class="o">=</span><span class="s">&#34;M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z&#34;</span><span class="p">/&gt;&lt;</span><span class="nt">path</span> <span class="na">fill-rule</span><span class="o">=</span><span class="s">&#34;evenodd&#34;</span> <span class="na">d</span><span class="o">=</span><span class="s">&#34;M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z&#34;</span><span class="p">/&gt;&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;ms-3 me-auto&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;fw-bold&#34;</span><span class="p">&gt;</span>Row item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text-muted&#34;</span><span class="p">&gt;</span>Lorem ipsum dolor sit amet, consectetur...<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-text&#34;</span><span class="p">&gt;</span>Lorem ipsum dolor sit amet...<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item-action list-group-item d-flex justify-content-between align-items-center&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">svg</span> <span class="na">xmlns</span><span class="o">=</span><span class="s">&#34;http://www.w3.org/2000/svg&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;35&#34;</span> <span class="na">height</span><span class="o">=</span><span class="s">&#34;35&#34;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&#34;currentColor&#34;</span> <span class="na">viewBox</span><span class="o">=</span><span class="s">&#34;0 0 16 16&#34;</span><span class="p">&gt;&lt;</span><span class="nt">path</span> <span class="na">d</span><span class="o">=</span><span class="s">&#34;M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z&#34;</span><span class="p">/&gt;&lt;</span><span class="nt">path</span> <span class="na">fill-rule</span><span class="o">=</span><span class="s">&#34;evenodd&#34;</span> <span class="na">d</span><span class="o">=</span><span class="s">&#34;M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z&#34;</span><span class="p">/&gt;&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;ms-3 me-auto&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;fw-bold&#34;</span><span class="p">&gt;</span>Row item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text-muted&#34;</span><span class="p">&gt;</span>Lorem ipsum dolor sit amet, consectetur...<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-text&#34;</span><span class="p">&gt;</span>Lorem ipsum dolor sit amet...<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item-action list-group-item d-flex justify-content-between align-items-center&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">svg</span> <span class="na">xmlns</span><span class="o">=</span><span class="s">&#34;http://www.w3.org/2000/svg&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;35&#34;</span> <span class="na">height</span><span class="o">=</span><span class="s">&#34;35&#34;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&#34;currentColor&#34;</span> <span class="na">viewBox</span><span class="o">=</span><span class="s">&#34;0 0 16 16&#34;</span><span class="p">&gt;&lt;</span><span class="nt">path</span> <span class="na">d</span><span class="o">=</span><span class="s">&#34;M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z&#34;</span><span class="p">/&gt;&lt;</span><span class="nt">path</span> <span class="na">fill-rule</span><span class="o">=</span><span class="s">&#34;evenodd&#34;</span> <span class="na">d</span><span class="o">=</span><span class="s">&#34;M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z&#34;</span><span class="p">/&gt;&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;ms-3 me-auto&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;fw-bold&#34;</span><span class="p">&gt;</span>Row item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text-muted&#34;</span><span class="p">&gt;</span>Lorem ipsum dolor sit amet, consectetur...<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-text&#34;</span><span class="p">&gt;</span>Lorem ipsum dolor sit amet...<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span></span></span></code></pre></div></div>
+
+<h3 id="two-line-list-with-avatar">Two Line List with avatar <a class="anchor-link" href="#two-line-list-with-avatar" aria-label="Link to this section: Two Line List with avatar"></a></h3>
+<div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
+<ol class="list-group">
+  <li class="list-group-item-action list-group-item d-flex justify-content-between align-items-center">
+    <img src="../../assets/img/bio-example-1.png" alt="..." class="placeholder-img br-100" style="height: 3rem; width: 3rem">
+    <div class="ms-3 me-auto">
+      <div class="fw-bold">Row item</div>
+      <span class="list-group-text">Angular Team - XYZ PVT LTD.</span>
+    </div>
+  </li>
+  <li class="list-group-item-action list-group-item d-flex justify-content-between align-items-center">
+    <img src="../../assets/img/bio-example-1.png" alt="..." class="placeholder-img br-100" style="height: 3rem; width: 3rem">
+    <div class="ms-3 me-auto">
+      <div class="fw-bold">Row item</div>
+      <span class="list-group-text">Angular Team - XYZ PVT LTD.</span>
+    </div>
+  </li>
+  <li class="list-group-item-action list-group-item d-flex justify-content-between align-items-center">
+    <img src="../../assets/img/bio-example-1.png" alt="..." class="placeholder-img br-100" style="height: 3rem; width: 3rem">
+    <div class="ms-3 me-auto">
+      <div class="fw-bold">Row item</div>
+      <span class="list-group-text">Angular Team - XYZ PVT LTD.</span>
+    </div>
+  </li>
+</ol>
+</div><div class="d-flex align-items-center highlight-toolbar bg-light ps-3 pe-2 py-1">
+        <small class="font-monospace text-muted text-uppercase">html</small>
+        <div class="d-flex ms-auto">
+          <button type="button" class="btn-edit text-nowrap" title="Try it on StackBlitz">
+            <svg class="bi" role="img" aria-label="Try it"><use xlink:href="#lightning-charge-fill"/></svg>
+          </button>
+          <button type="button" class="btn-clipboard mt-0 me-0" title="Copy to clipboard">
+            <svg class="bi" role="img" aria-label="Copy"><use xlink:href="#clipboard"/></svg>
+          </button>
+        </div>
+      </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">ol</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item-action list-group-item d-flex justify-content-between align-items-center&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;../../assets/img/bio-example-1.png&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;placeholder-img br-100&#34;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;height: 3rem; width: 3rem&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;ms-3 me-auto&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;fw-bold&#34;</span><span class="p">&gt;</span>Row item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-text&#34;</span><span class="p">&gt;</span>Angular Team - XYZ PVT LTD.<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item-action list-group-item d-flex justify-content-between align-items-center&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">svg</span> <span class="na">xmlns</span><span class="o">=</span><span class="s">&#34;http://www.w3.org/2000/svg&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;35&#34;</span> <span class="na">height</span><span class="o">=</span><span class="s">&#34;35&#34;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&#34;currentColor&#34;</span> <span class="na">viewBox</span><span class="o">=</span><span class="s">&#34;0 0 16 16&#34;</span><span class="p">&gt;&lt;</span><span class="nt">path</span> <span class="na">d</span><span class="o">=</span><span class="s">&#34;M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z&#34;</span><span class="p">/&gt;&lt;</span><span class="nt">path</span> <span class="na">fill-rule</span><span class="o">=</span><span class="s">&#34;evenodd&#34;</span> <span class="na">d</span><span class="o">=</span><span class="s">&#34;M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z&#34;</span><span class="p">/&gt;&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;../../assets/img/bio-example-1.png&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;placeholder-img br-100&#34;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;height: 3rem; width: 3rem&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;ms-3 me-auto&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;fw-bold&#34;</span><span class="p">&gt;</span>Row item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text-muted&#34;</span><span class="p">&gt;</span>Lorem ipsum dolor sit amet, consectetur...<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-text&#34;</span><span class="p">&gt;</span>Angular Team - XYZ PVT LTD.<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item-action list-group-item d-flex justify-content-between align-items-center&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;../../assets/img/bio-example-1.png&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;placeholder-img br-100&#34;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;height: 3rem; width: 3rem&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;ms-3 me-auto&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;fw-bold&#34;</span><span class="p">&gt;</span>Row item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-text&#34;</span><span class="p">&gt;</span>Angular Team - XYZ PVT LTD.<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span></span></span></code></pre></div></div>
+
+<h4 id="dark">Dark <a class="anchor-link" href="#dark" aria-label="Link to this section: Dark"></a></h4>
+<div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
+<ol class="list-group list-group-dark">
+  <li class="list-group-item-action list-group-item d-flex justify-content-between align-items-center">
+    <img src="../../assets/img/bio-example-1.png" alt="..." class="placeholder-img br-100" style="height: 3rem; width: 3rem">
+    <div class="ms-3 me-auto">
+      <div class="fw-bold">Row item</div>
+      <span class="list-group-text">Angular Team - XYZ PVT LTD.</span>
+    </div>
+  </li>
+  <li class="list-group-item-action list-group-item d-flex justify-content-between align-items-center">
+    <img src="../../assets/img/bio-example-1.png" alt="..." class="placeholder-img br-100" style="height: 3rem; width: 3rem">
+    <div class="ms-3 me-auto">
+      <div class="fw-bold">Row item</div>
+      <span class="list-group-text">Angular Team - XYZ PVT LTD.</span>
+    </div>
+  </li>
+  <li class="list-group-item-action list-group-item d-flex justify-content-between align-items-center">
+    <img src="../../assets/img/bio-example-1.png" alt="..." class="placeholder-img br-100" style="height: 3rem; width: 3rem">
+    <div class="ms-3 me-auto">
+      <div class="fw-bold">Row item</div>
+      <span class="list-group-text">Angular Team - XYZ PVT LTD.</span>
+    </div>
+  </li>
+</ol>
+</div><div class="d-flex align-items-center highlight-toolbar bg-light ps-3 pe-2 py-1">
+        <small class="font-monospace text-muted text-uppercase">html</small>
+        <div class="d-flex ms-auto">
+          <button type="button" class="btn-edit text-nowrap" title="Try it on StackBlitz">
+            <svg class="bi" role="img" aria-label="Try it"><use xlink:href="#lightning-charge-fill"/></svg>
+          </button>
+          <button type="button" class="btn-clipboard mt-0 me-0" title="Copy to clipboard">
+            <svg class="bi" role="img" aria-label="Copy"><use xlink:href="#clipboard"/></svg>
+          </button>
+        </div>
+      </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">ol</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group list-group-dark&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item-action list-group-item d-flex justify-content-between align-items-center&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;../../assets/img/bio-example-1.png&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;placeholder-img br-100&#34;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;height: 3rem; width: 3rem&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;ms-3 me-auto&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;fw-bold&#34;</span><span class="p">&gt;</span>Row item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-text&#34;</span><span class="p">&gt;</span>Angular Team - XYZ PVT LTD.<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item-action list-group-item d-flex justify-content-between align-items-center&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;../../assets/img/bio-example-1.png&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;placeholder-img br-100&#34;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;height: 3rem; width: 3rem&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;ms-3 me-auto&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;fw-bold&#34;</span><span class="p">&gt;</span>Row item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-text&#34;</span><span class="p">&gt;</span>Angular Team - XYZ PVT LTD.<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item-action list-group-item d-flex justify-content-between align-items-center&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;../../assets/img/bio-example-1.png&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;placeholder-img br-100&#34;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;height: 3rem; width: 3rem&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;ms-3 me-auto&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;fw-bold&#34;</span><span class="p">&gt;</span>Row item<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-text&#34;</span><span class="p">&gt;</span>Angular Team - XYZ PVT LTD.<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span></span></span></code></pre></div></div>
@@ -995,8 +1103,10 @@
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item&#34;</span><span class="p">&gt;</span>A third item<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span></span></span></code></pre></div></div>
 
-<h2 id="contextual-classes">Contextual classes <a class="anchor-link" href="#contextual-classes" aria-label="Link to this section: Contextual classes"></a></h2>
-<p>Use contextual classes to style list items with a stateful background and color.</p>
+<!-- ## Contextual classes
+
+Use contextual classes to style list items with a stateful background and color.
+
 <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
 <ul class="list-group">
   <li class="list-group-item">A simple default list group item</li>
@@ -1031,7 +1141,9 @@
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item list-group-item-success&#34;</span><span class="p">&gt;</span>A simple success list group item<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span></span></span></code></pre></div></div>
 
-<p>Contextual classes also work with <code>.list-group-item-action</code>. Note the addition of the hover styles here not present in the previous example. Also supported is the <code>.active</code> state; apply it to indicate an active selection on a contextual list group item.</p>
+
+Contextual classes also work with `.list-group-item-action`. Note the addition of the hover styles here not present in the previous example. Also supported is the `.active` state; apply it to indicate an active selection on a contextual list group item.
+
 <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
 <div class="list-group">
   <a href="#" class="list-group-item list-group-item-action">A simple default list group item</a>
@@ -1065,7 +1177,7 @@
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item list-group-item-action list-group-item-info&#34;</span><span class="p">&gt;</span>A simple info list group item<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item list-group-item-action list-group-item-success&#34;</span><span class="p">&gt;</span>A simple success list group item<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></span></span></code></pre></div></div>
-
+ -->
 <div class="bd-callout bd-callout-info">
 <h5 id="conveying-meaning-to-assistive-technologies">Conveying meaning to assistive technologies <a class="anchor-link" href="#conveying-meaning-to-assistive-technologies" aria-label="Link to this section: Conveying meaning to assistive technologies"></a></h5>
 <p>Using color to add meaning only provides a visual indication, which will not be conveyed to users of assistive technologies – such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (e.g. the visible text), or is included through alternative means, such as additional text hidden with the <code>.visually-hidden</code> class.
@@ -1299,50 +1411,46 @@
 <small class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-success bg-success bg-opacity-10 border border-success border-opacity-10 rounded-2">Added in v5.2.0</small>
 
 <p>As part of Bootstrap&rsquo;s evolving CSS variables approach, list groups now use local CSS variables on <code>.list-group</code> for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl">  <span class="na">--#{$prefix}list-group-color</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$list-group-color</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}list-group-bg</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$list-group-bg</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}list-group-border-color</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$list-group-border-color</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}list-group-border-width</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$list-group-border-width</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}list-group-border-radius</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$list-group-border-radius</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}list-group-item-padding-x</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$list-group-item-padding-x</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}list-group-item-padding-y</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$list-group-item-padding-y</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}list-group-action-color</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$list-group-action-color</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}list-group-action-hover-color</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$list-group-action-hover-color</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}list-group-action-hover-bg</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$list-group-hover-bg</span><span class="si">}</span><span class="p">;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl">  <span class="na">--#{$prefix}list-group-action-active-bg</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$list-group-action-active-bg</span><span class="si">}</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}list-group-action-active-color</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$list-group-action-active-color</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}list-group-action-active-bg</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$list-group-action-active-bg</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}list-group-disabled-color</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$list-group-disabled-color</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}list-group-disabled-bg</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$list-group-disabled-bg</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}list-group-active-color</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$list-group-active-color</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}list-group-action-color</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$list-group-action-color</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}list-group-action-hover-bg</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$list-group-hover-bg</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}list-group-action-hover-color</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$list-group-action-hover-color</span><span class="si">}</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}list-group-active-bg</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$list-group-active-bg</span><span class="si">}</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}list-group-active-border-color</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$list-group-active-border-color</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}list-group-active-color</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$list-group-active-color</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}list-group-bg</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$list-group-bg</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}list-group-border-color</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$list-group-border-color</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}list-group-border-radius</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$list-group-border-radius</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}list-group-border-width</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$list-group-border-width</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}list-group-color</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$list-group-color</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}list-group-disabled-color</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$list-group-disabled-color</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}list-group-disabled-bg</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$list-group-disabled-bg</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}list-group-item-padding-b</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$list-group-item-padding-b</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}list-group-item-padding-x</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$list-group-item-padding-x</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}list-group-item-padding-t</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$list-group-item-padding-t</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}list-group-text-color</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$list-group-text-color</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}list-group-text-family</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$list-group-text-family</span><span class="si">}</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  </span></span></code></pre></div>
 <h3 id="sass-variables">Sass variables <a class="anchor-link" href="#sass-variables" aria-label="Link to this section: Sass variables"></a></h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="nv">$list-group-color</span><span class="o">:</span>                  <span class="nv">$gray-900</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$list-group-bg</span><span class="o">:</span>                     <span class="nv">$white</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$list-group-border-color</span><span class="o">:</span>           <span class="nf">rgba</span><span class="p">(</span><span class="nv">$black</span><span class="o">,</span> <span class="mf">.125</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$list-group-border-width</span><span class="o">:</span>           <span class="nv">$border-width</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$list-group-border-radius</span><span class="o">:</span>          <span class="nv">$border-radius</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">$list-group-item-padding-y</span><span class="o">:</span>         <span class="nv">$spacer</span> <span class="o">*</span> <span class="mf">.5</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$list-group-item-padding-x</span><span class="o">:</span>         <span class="nv">$spacer</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$list-group-item-bg-scale</span><span class="o">:</span>          <span class="o">-</span><span class="mi">80</span><span class="kt">%</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$list-group-item-color-scale</span><span class="o">:</span>       <span class="mi">40</span><span class="kt">%</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">$list-group-hover-bg</span><span class="o">:</span>               <span class="nv">$gray-100</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$list-group-active-color</span><span class="o">:</span>           <span class="nv">$component-active-color</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$list-group-active-bg</span><span class="o">:</span>              <span class="nv">$component-active-bg</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$list-group-active-border-color</span><span class="o">:</span>    <span class="nv">$list-group-active-bg</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">$list-group-disabled-color</span><span class="o">:</span>         <span class="nv">$gray-600</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$list-group-disabled-bg</span><span class="o">:</span>            <span class="nv">$list-group-bg</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">$list-group-action-color</span><span class="o">:</span>           <span class="nv">$gray-700</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$list-group-action-hover-color</span><span class="o">:</span>     <span class="nv">$list-group-action-color</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">$list-group-action-active-color</span><span class="o">:</span>    <span class="nv">$body-color</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$list-group-action-active-bg</span><span class="o">:</span>       <span class="nv">$gray-200</span><span class="p">;</span>
+<p><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="nv">$list-group-active-bg</span><span class="o">:</span>                    <span class="nv">$secondary</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$list-group-active-border-color</span><span class="o">:</span>          <span class="nv">$secondary</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$list-group-border-color</span><span class="o">:</span>                 <span class="nv">$primary-t8</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$list-group-border-radius</span><span class="o">:</span>                <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$list-group-hover-bg</span><span class="o">:</span>                     <span class="nv">$primary-t9</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$list-group-item-padding-b</span><span class="o">:</span>               <span class="mf">.6875</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$list-group-item-padding-t</span><span class="o">:</span>               <span class="mf">.75</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$list-group-item-padding-x</span><span class="o">:</span>               <span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$list-group-text-color</span><span class="o">:</span>                   <span class="nv">$primary-t3</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$list-group-text-family</span><span class="o">:</span>                  <span class="nv">$font-family-monospace</span><span class="p">;</span>
 </span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="nv">$list-group-bg-dark</span><span class="o">:</span>                      <span class="nv">$primary</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$list-group-border-color-dark</span><span class="o">:</span>            <span class="nv">$primary-t2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$list-group-color-dark</span><span class="o">:</span>                   <span class="nv">$white</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$list-group-hover-bg-dark</span><span class="o">:</span>                <span class="nv">$primary-t1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$list-group-hover-color-dark</span><span class="o">:</span>             <span class="nv">$white</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$list-group-text-color-dark</span><span class="o">:</span>              <span class="nv">$primary-t6</span><span class="p">;</span>
+</span></span></code></pre></div></p>
 <h3 id="mixins">Mixins <a class="anchor-link" href="#mixins" aria-label="Link to this section: Mixins"></a></h3>
 <p>Used in combination with <code>$theme-colors</code> to generate the <a href="#contextual-classes">contextual variant classes</a> for <code>.list-group-item</code>s.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="k">@mixin</span><span class="nf"> list-group-item-variant</span><span class="p">(</span><span class="nv">$state</span><span class="o">,</span> <span class="nv">$background</span><span class="o">,</span> <span class="nv">$color</span><span class="p">)</span> <span class="p">{</span>

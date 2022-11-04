@@ -422,7 +422,11 @@
     <li><a href="#how-it-works">How it works</a></li>
     <li><a href="#examples">Examples</a>
       <ul>
-        <li><a href="#modal-components">Modal components</a></li>
+        <li><a href="#modal-components">Modal components</a>
+          <ul>
+            <li><a href="#dark">Dark</a></li>
+          </ul>
+        </li>
         <li><a href="#live-demo">Live demo</a></li>
         <li><a href="#static-backdrop">Static backdrop</a></li>
         <li><a href="#modified-modals">Modified modals</a>
@@ -516,8 +520,8 @@ The animation effect of this component is dependent on the <code>prefers-reduced
           <p>Modal body text goes here.</p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-outline-primary">Save changes</button>
         </div>
       </div>
     </div>
@@ -540,6 +544,43 @@ The animation effect of this component is dependent on the <code>prefers-reduced
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h4 id="dark">Dark <a class="anchor-link" href="#dark" aria-label="Link to this section: Dark"></a></h4>
+<div class="bd-example bg-light">
+  <div class="modal modal-dark position-static d-block" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal title</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Modal body text goes here.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-outline-secondary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;modal modal-dark&#34;</span> <span class="na">tabindex</span><span class="o">=</span><span class="s">&#34;-1&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;modal-dialog&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;modal-content&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;modal-header&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">h5</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;modal-title&#34;</span><span class="p">&gt;</span>Modal title<span class="p">&lt;/</span><span class="nt">h5</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn-close btn-close-white&#34;</span> <span class="na">data-bs-dismiss</span><span class="o">=</span><span class="s">&#34;modal&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Close&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;modal-body&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Modal body text goes here.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;modal-footer&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-secondary&#34;</span> <span class="na">data-bs-dismiss</span><span class="o">=</span><span class="s">&#34;modal&#34;</span><span class="p">&gt;</span>Close<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-outline-secondary&#34;</span><span class="p">&gt;</span>Save changes<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span></code></pre></div><h3 id="live-demo">Live demo <a class="anchor-link" href="#live-demo" aria-label="Link to this section: Live demo"></a></h3>
 <p>Toggle a working modal demo by clicking the button below. It will slide down and fade in from the top of the page.</p>
 <div class="modal fade" id="exampleModalLive" tabindex="-1" aria-labelledby="exampleModalLiveLabel" aria-hidden="true">
@@ -553,8 +594,9 @@ The animation effect of this component is dependent on the <code>prefers-reduced
         <p>Woo-hoo, you're reading this text in a modal!</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-outline-primary">Save changes</button>
+        <button type="button" class="btn btn-link">Understood</button>
       </div>
     </div>
   </div>
@@ -581,8 +623,9 @@ The animation effect of this component is dependent on the <code>prefers-reduced
 </span></span><span class="line"><span class="cl">        ...
 </span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;modal-footer&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-secondary&#34;</span> <span class="na">data-bs-dismiss</span><span class="o">=</span><span class="s">&#34;modal&#34;</span><span class="p">&gt;</span>Close<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary&#34;</span><span class="p">&gt;</span>Save changes<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary&#34;</span> <span class="na">data-bs-dismiss</span><span class="o">=</span><span class="s">&#34;modal&#34;</span><span class="p">&gt;</span>Close<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-outline-primary&#34;</span><span class="p">&gt;</span>Save changes<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-link&#34;</span><span class="p">&gt;</span>Understood<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
@@ -600,8 +643,8 @@ The animation effect of this component is dependent on the <code>prefers-reduced
         <p>I will not close if you click outside of me. Don't even try to press escape key.</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Understood</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-outline-primary">Understood</button>
       </div>
     </div>
   </div>
@@ -628,8 +671,8 @@ The animation effect of this component is dependent on the <code>prefers-reduced
 </span></span><span class="line"><span class="cl">        ...
 </span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;modal-footer&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-secondary&#34;</span> <span class="na">data-bs-dismiss</span><span class="o">=</span><span class="s">&#34;modal&#34;</span><span class="p">&gt;</span>Close<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary&#34;</span><span class="p">&gt;</span>Understood<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary&#34;</span> <span class="na">data-bs-dismiss</span><span class="o">=</span><span class="s">&#34;modal&#34;</span><span class="p">&gt;</span>Close<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-outline-primary&#34;</span><span class="p">&gt;</span>Understood<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
@@ -746,8 +789,8 @@ The animation effect of this component is dependent on the <code>prefers-reduced
         <p>This is some placeholder content to show the scrolling behavior for modals. Instead of repeating the text the modal, we use an inline style set a minimum height, thereby extending the length of the overall modal and demonstrating the overflow scrolling. When content becomes longer than the height of the viewport, scrolling will move the modal as needed.</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-outline-primary">Save changes</button>
       </div>
     </div>
   </div>
@@ -771,8 +814,8 @@ The animation effect of this component is dependent on the <code>prefers-reduced
         <p>This content should appear at the bottom after you scroll.</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-outline-primary">Save changes</button>
       </div>
     </div>
   </div>
@@ -799,8 +842,8 @@ The animation effect of this component is dependent on the <code>prefers-reduced
         <p>This is a vertically centered modal.</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-outline-primary">Save changes</button>
       </div>
     </div>
   </div>
@@ -818,8 +861,8 @@ The animation effect of this component is dependent on the <code>prefers-reduced
         <p>Just like that.</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-outline-primary">Save changes</button>
       </div>
     </div>
   </div>
@@ -852,14 +895,14 @@ The animation effect of this component is dependent on the <code>prefers-reduced
       </div>
       <div class="modal-body">
         <h5>Popover in a modal</h5>
-        <p>This <a href="#" role="button" class="btn btn-secondary" data-bs-toggle="popover" title="Popover title" data-bs-content="Popover body content is set in this attribute." data-bs-container="#exampleModalPopovers">button</a> triggers a popover on click.</p>
+        <p>This <a href="#" role="button" class="btn btn-primary" data-bs-toggle="popover" title="Popover title" data-bs-content="Popover body content is set in this attribute." data-bs-container="#exampleModalPopovers">button</a> triggers a popover on click.</p>
         <hr>
         <h5>Tooltips in a modal</h5>
         <p><a href="#" data-bs-toggle="tooltip" title="Tooltip" data-bs-container="#exampleModalPopovers">This link</a> and <a href="#" data-bs-toggle="tooltip" title="Tooltip" data-bs-container="#exampleModalPopovers">that link</a> have tooltips on hover.</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-outline-primary">Save changes</button>
       </div>
     </div>
   </div>
@@ -914,8 +957,8 @@ The animation effect of this component is dependent on the <code>prefers-reduced
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-outline-primary">Save changes</button>
       </div>
     </div>
   </div>
@@ -981,8 +1024,8 @@ The animation effect of this component is dependent on the <code>prefers-reduced
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Send message</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-outline-primary">Save changes</button>
       </div>
     </div>
   </div>
@@ -1021,8 +1064,8 @@ The animation effect of this component is dependent on the <code>prefers-reduced
 </span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;modal-footer&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-secondary&#34;</span> <span class="na">data-bs-dismiss</span><span class="o">=</span><span class="s">&#34;modal&#34;</span><span class="p">&gt;</span>Close<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary&#34;</span><span class="p">&gt;</span>Send message<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary&#34;</span> <span class="na">data-bs-dismiss</span><span class="o">=</span><span class="s">&#34;modal&#34;</span><span class="p">&gt;</span>Close<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-outline-primary&#34;</span><span class="p">&gt;</span>Save changes<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
@@ -1287,7 +1330,7 @@ The animation effect of this component is dependent on the <code>prefers-reduced
         ...
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
@@ -1303,7 +1346,7 @@ The animation effect of this component is dependent on the <code>prefers-reduced
         ...
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
@@ -1319,7 +1362,7 @@ The animation effect of this component is dependent on the <code>prefers-reduced
         ...
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
@@ -1335,7 +1378,7 @@ The animation effect of this component is dependent on the <code>prefers-reduced
         ...
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
@@ -1351,7 +1394,7 @@ The animation effect of this component is dependent on the <code>prefers-reduced
         ...
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
@@ -1367,7 +1410,7 @@ The animation effect of this component is dependent on the <code>prefers-reduced
         ...
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
@@ -1377,73 +1420,53 @@ The animation effect of this component is dependent on the <code>prefers-reduced
 <small class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-success bg-success bg-opacity-10 border border-success border-opacity-10 rounded-2">Added in v5.2.0</small>
 
 <p>As part of Bootstrap&rsquo;s evolving CSS variables approach, modals now use local CSS variables on <code>.modal</code> and <code>.modal-backdrop</code> for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl">  <span class="na">--#{$prefix}modal-zindex</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$zindex-modal</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}modal-width</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-md</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}modal-padding</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-inner-padding</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}modal-margin</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-dialog-margin</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}modal-color</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-content-color</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}modal-bg</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-content-bg</span><span class="si">}</span><span class="p">;</span>
+<p><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl">  <span class="na">--#{$prefix}modal-bg</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-content-bg</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}modal-body-padding-x</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-body-padding-x</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}modal-body-padding-y</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-body-padding-y</span><span class="si">}</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}modal-border-color</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-content-border-color</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}modal-border-width</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-content-border-width</span><span class="si">}</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}modal-border-radius</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-content-border-radius</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}modal-border-width</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-content-border-width</span><span class="si">}</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}modal-box-shadow</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-content-box-shadow-xs</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}modal-inner-border-radius</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-content-inner-border-radius</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}modal-header-padding-x</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-header-padding-x</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}modal-header-padding-y</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-header-padding-y</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}modal-header-padding</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-header-padding</span><span class="si">}</span><span class="p">;</span> <span class="c1">// Todo in v6: Split this padding into x and y
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="na">--#{$prefix}modal-header-border-color</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-header-border-color</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}modal-header-border-width</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-header-border-width</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}modal-title-line-height</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-title-line-height</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}modal-footer-gap</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-footer-margin-between</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}modal-color</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-content-color</span><span class="si">}</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}modal-footer-bg</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-footer-bg</span><span class="si">}</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}modal-footer-border-color</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-footer-border-color</span><span class="si">}</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}modal-footer-border-width</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-footer-border-width</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}modal-footer-gap</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-footer-margin-between</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}modal-header-border-color</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-header-border-color</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}modal-header-border-width</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-header-border-width</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}modal-header-padding</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-header-padding</span><span class="si">}</span><span class="p">;</span> <span class="c1">// Todo in v6: Split this padding into x and y
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="na">--#{$prefix}modal-header-padding-b</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-header-padding-b</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}modal-header-padding-x</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-header-padding-x</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}modal-header-padding-t</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-header-padding-t</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}modal-inner-border-radius</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-content-inner-border-radius</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}modal-margin</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-dialog-margin</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}modal-padding</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-inner-padding</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}modal-title-line-height</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-title-line-height</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}modal-width</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-md</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}modal-zindex</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$zindex-modal</span><span class="si">}</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  </span></span></code></pre></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl">  <span class="na">--#{$prefix}backdrop-zindex</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$zindex-modal-backdrop</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}backdrop-bg</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-backdrop-bg</span><span class="si">}</span><span class="p">;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl">  <span class="na">--#{$prefix}modal-bg</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-bg-dark</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}modal-border-color</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-border-color-dark</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}modal-color</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-color-dark</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}modal-header-border-color</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-border-color-dark</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  </span></span></code></pre></div></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl">  <span class="na">--#{$prefix}backdrop-bg</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-backdrop-bg</span><span class="si">}</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}backdrop-opacity</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$modal-backdrop-opacity</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}backdrop-zindex</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$zindex-modal-backdrop</span><span class="si">}</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  </span></span></code></pre></div>
 <h3 id="sass-variables">Sass variables <a class="anchor-link" href="#sass-variables" aria-label="Link to this section: Sass variables"></a></h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="nv">$modal-inner-padding</span><span class="o">:</span>               <span class="nv">$spacer</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">$modal-footer-margin-between</span><span class="o">:</span>       <span class="mf">.5</span><span class="kt">rem</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">$modal-dialog-margin</span><span class="o">:</span>               <span class="mf">.5</span><span class="kt">rem</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$modal-dialog-margin-y-sm-up</span><span class="o">:</span>       <span class="mi">1</span><span class="mf">.75</span><span class="kt">rem</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">$modal-title-line-height</span><span class="o">:</span>           <span class="nv">$line-height-base</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">$modal-content-color</span><span class="o">:</span>               <span class="n">null</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$modal-content-bg</span><span class="o">:</span>                  <span class="nv">$white</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$modal-content-border-color</span><span class="o">:</span>        <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="si">#{</span><span class="nv">$prefix</span><span class="si">}</span><span class="n">border-color-translucent</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$modal-content-border-width</span><span class="o">:</span>        <span class="nv">$border-width</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$modal-content-border-radius</span><span class="o">:</span>       <span class="nv">$border-radius-lg</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$modal-content-inner-border-radius</span><span class="o">:</span> <span class="nf">subtract</span><span class="p">(</span><span class="nv">$modal-content-border-radius</span><span class="o">,</span> <span class="nv">$modal-content-border-width</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$modal-content-box-shadow-xs</span><span class="o">:</span>       <span class="nv">$box-shadow-sm</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$modal-content-box-shadow-sm-up</span><span class="o">:</span>    <span class="nv">$box-shadow</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">$modal-backdrop-bg</span><span class="o">:</span>                 <span class="nv">$black</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$modal-backdrop-opacity</span><span class="o">:</span>            <span class="mf">.5</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">$modal-header-border-color</span><span class="o">:</span>         <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="si">#{</span><span class="nv">$prefix</span><span class="si">}</span><span class="n">border-color</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$modal-header-border-width</span><span class="o">:</span>         <span class="nv">$modal-content-border-width</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$modal-header-padding-y</span><span class="o">:</span>            <span class="nv">$modal-inner-padding</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$modal-header-padding-x</span><span class="o">:</span>            <span class="nv">$modal-inner-padding</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$modal-header-padding</span><span class="o">:</span>              <span class="nv">$modal-header-padding-y</span> <span class="nv">$modal-header-padding-x</span><span class="p">;</span> <span class="c1">// Keep this for backwards compatibility
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
-</span></span><span class="line"><span class="cl"><span class="nv">$modal-footer-bg</span><span class="o">:</span>                   <span class="n">null</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$modal-footer-border-color</span><span class="o">:</span>         <span class="nv">$modal-header-border-color</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$modal-footer-border-width</span><span class="o">:</span>         <span class="nv">$modal-header-border-width</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">$modal-sm</span><span class="o">:</span>                          <span class="mi">300</span><span class="kt">px</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$modal-md</span><span class="o">:</span>                          <span class="mi">500</span><span class="kt">px</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$modal-lg</span><span class="o">:</span>                          <span class="mi">800</span><span class="kt">px</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$modal-xl</span><span class="o">:</span>                          <span class="mi">1140</span><span class="kt">px</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">$modal-fade-transform</span><span class="o">:</span>              <span class="nf">translate</span><span class="p">(</span><span class="mi">0</span><span class="o">,</span> <span class="o">-</span><span class="mi">50</span><span class="kt">px</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$modal-show-transform</span><span class="o">:</span>              <span class="ni">none</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$modal-transition</span><span class="o">:</span>                  <span class="ni">transform</span> <span class="mf">.3</span><span class="kt">s</span> <span class="ni">ease-out</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$modal-scale-transform</span><span class="o">:</span>             <span class="nf">scale</span><span class="p">(</span><span class="mi">1</span><span class="mf">.02</span><span class="p">);</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="nv">$modal-body-padding-x</span><span class="o">:</span>                    <span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$modal-body-padding-y</span><span class="o">:</span>                    <span class="mi">1</span><span class="mf">.5</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$modal-content-bg</span><span class="o">:</span>                        <span class="nv">$white</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$modal-content-border-color</span><span class="o">:</span>              <span class="nv">$primary-t9</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$modal-content-border-radius</span><span class="o">:</span>             <span class="mf">.25</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$modal-content-box-shadow-xs</span><span class="o">:</span>             <span class="mi">0</span> <span class="mf">.625</span><span class="kt">rem</span> <span class="mi">1</span><span class="mf">.25</span><span class="kt">rem</span> <span class="mi">0</span> <span class="nf">rgba</span><span class="p">(</span><span class="nv">$black</span><span class="o">,</span> <span class="mf">.1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$modal-content-box-shadow-sm-up</span><span class="o">:</span>          <span class="nv">$modal-content-box-shadow-xs</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$modal-footer-border-width</span><span class="o">:</span>               <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$modal-header-border-color</span><span class="o">:</span>               <span class="nv">$modal-content-border-color</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$modal-header-padding-b</span><span class="o">:</span>                  <span class="mi">1</span><span class="mf">.375</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$modal-header-padding-x</span><span class="o">:</span>                  <span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$modal-header-padding-t</span><span class="o">:</span>                  <span class="mi">1</span><span class="mf">.3125</span><span class="kt">rem</span><span class="p">;</span>
 </span></span></code></pre></div>
 <h3 id="loop">Loop <a class="anchor-link" href="#loop" aria-label="Link to this section: Loop"></a></h3>
 <p><a href="#fullscreen-modal">Responsive fullscreen modals</a> are generated via the <code>$breakpoints</code> map and a loop in <code>scss/_modal.scss</code>.</p>
@@ -1453,15 +1476,15 @@ The animation effect of this component is dependent on the <code>prefers-reduced
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="k">@include</span><span class="nd"> media-breakpoint-down</span><span class="p">(</span><span class="nv">$breakpoint</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="nc">.modal-fullscreen</span><span class="si">#{</span><span class="nv">$postfix</span><span class="si">}</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">      <span class="na">width</span><span class="o">:</span> <span class="mi">100</span><span class="kt">vw</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">      <span class="na">max-width</span><span class="o">:</span> <span class="ni">none</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">      <span class="na">height</span><span class="o">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">      <span class="na">margin</span><span class="o">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="na">max-width</span><span class="o">:</span> <span class="ni">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="na">width</span><span class="o">:</span> <span class="mi">100</span><span class="kt">vw</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">      <span class="nc">.modal-content</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="na">height</span><span class="o">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="na">border</span><span class="o">:</span> <span class="mi">0</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">        <span class="k">@include</span><span class="nd"> border-radius</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="na">border</span><span class="o">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="na">height</span><span class="o">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">      <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">      <span class="nc">.modal-header</span><span class="o">,</span>

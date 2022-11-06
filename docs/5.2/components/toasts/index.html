@@ -412,6 +412,8 @@
     <li><a href="#examples">Examples</a>
       <ul>
         <li><a href="#basic">Basic</a></li>
+        <li><a href="#dark">Dark</a></li>
+        <li><a href="#with-details">With Details</a></li>
         <li><a href="#live-example">Live example</a></li>
         <li><a href="#translucent">Translucent</a></li>
         <li><a href="#stacking">Stacking</a></li>
@@ -459,11 +461,10 @@ The animation effect of this component is dependent on the <code>prefers-reduced
 <h3 id="basic">Basic <a class="anchor-link" href="#basic" aria-label="Link to this section: Basic"></a></h3>
 <p>To encourage extensible and predictable toasts, we recommend a header and body. Toast headers use <code>display: flex</code>, allowing easy alignment of content thanks to our margin and flexbox utilities.</p>
 <p>Toasts are as flexible as you need and have very little required markup. At a minimum, we require a single element to contain your &ldquo;toasted&rdquo; content and strongly encourage a dismiss button.</p>
-<div class="bd-example-snippet bd-code-snippet"><div class="bd-example bg-light">
+<div class="bd-example-snippet bd-code-snippet"><div class="bd-example bg-dark">
 <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
   <div class="toast-header">
-    <svg class="placeholder-img rounded me-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#007aff"/></svg>
-
+    <i class="pt-icon pt-i-gear me-2 text-secondary"></i>
     <strong class="me-auto">Bootstrap</strong>
     <small>11 mins ago</small>
     <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
@@ -484,13 +485,97 @@ The animation effect of this component is dependent on the <code>prefers-reduced
         </div>
       </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;toast&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;alert&#34;</span> <span class="na">aria-live</span><span class="o">=</span><span class="s">&#34;assertive&#34;</span> <span class="na">aria-atomic</span><span class="o">=</span><span class="s">&#34;true&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;toast-header&#34;</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded me-2&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;pt-icon pt-i-gear me-2 text-secondary&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">strong</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;me-auto&#34;</span><span class="p">&gt;</span>Bootstrap<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">small</span><span class="p">&gt;</span>11 mins ago<span class="p">&lt;/</span><span class="nt">small</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn-close&#34;</span> <span class="na">data-bs-dismiss</span><span class="o">=</span><span class="s">&#34;toast&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Close&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;toast-body&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">    Hello, world! This is a toast message.
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></span></span></code></pre></div></div>
+
+<h3 id="dark">Dark <a class="anchor-link" href="#dark" aria-label="Link to this section: Dark"></a></h3>
+<div class="bd-example-snippet bd-code-snippet"><div class="bd-example bg-light">
+<div class="toast toast-dark" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="toast-header">
+    <i class="pt-icon pt-i-gear me-2 text-secondary"></i>
+    <strong class="me-auto text-white">Bootstrap</strong>
+    <small>11 mins ago</small>
+    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+  <div class="toast-body">
+    Hello, world! This is a toast message.
+  </div>
+</div>
+</div><div class="d-flex align-items-center highlight-toolbar bg-light ps-3 pe-2 py-1">
+        <small class="font-monospace text-muted text-uppercase">html</small>
+        <div class="d-flex ms-auto">
+          <button type="button" class="btn-edit text-nowrap" title="Try it on StackBlitz">
+            <svg class="bi" role="img" aria-label="Try it"><use xlink:href="#lightning-charge-fill"/></svg>
+          </button>
+          <button type="button" class="btn-clipboard mt-0 me-0" title="Copy to clipboard">
+            <svg class="bi" role="img" aria-label="Copy"><use xlink:href="#clipboard"/></svg>
+          </button>
+        </div>
+      </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;toast toast-dark&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;alert&#34;</span> <span class="na">aria-live</span><span class="o">=</span><span class="s">&#34;assertive&#34;</span> <span class="na">aria-atomic</span><span class="o">=</span><span class="s">&#34;true&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;toast-header&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;pt-icon pt-i-gear me-2 text-secondary&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">strong</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;me-auto text-white&#34;</span><span class="p">&gt;</span>Bootstrap<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">small</span><span class="p">&gt;</span>11 mins ago<span class="p">&lt;/</span><span class="nt">small</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn-close&#34;</span> <span class="na">data-bs-dismiss</span><span class="o">=</span><span class="s">&#34;toast&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Close&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;toast-body&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    Hello, world! This is a toast message.
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></span></span></code></pre></div></div>
+
+<h3 id="with-details">With Details <a class="anchor-link" href="#with-details" aria-label="Link to this section: With Details"></a></h3>
+<div class="bd-example-snippet bd-code-snippet"><div class="bd-example bg-light">
+<div class="toast toast-dark" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="toast-header">
+    <i class="pt-icon pt-i-gear me-2 text-secondary"></i>
+    <strong class="me-auto text-white">Bootstrap</strong>
+    <small>11 mins ago</small>
+    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+  <div class="toast-body">
+    <div class="d-flex justify-content-between align-items-start">
+      <img src="../../assets/img/bio-example-1.png" alt="..." class="placeholder-img br-100" style="height: 1.875rem; width: 1.875rem">
+      <div class="ms-3 me-auto">
+        <p class="mb-0">Hello, world! This is a toast message.</p>
+        <p class="text-muted mb-0">Hello, world! This is a notification. Lore ipsum dolor lo
+      rem ipsum dolor</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div><div class="d-flex align-items-center highlight-toolbar bg-light ps-3 pe-2 py-1">
+        <small class="font-monospace text-muted text-uppercase">html</small>
+        <div class="d-flex ms-auto">
+          <button type="button" class="btn-edit text-nowrap" title="Try it on StackBlitz">
+            <svg class="bi" role="img" aria-label="Try it"><use xlink:href="#lightning-charge-fill"/></svg>
+          </button>
+          <button type="button" class="btn-clipboard mt-0 me-0" title="Copy to clipboard">
+            <svg class="bi" role="img" aria-label="Copy"><use xlink:href="#clipboard"/></svg>
+          </button>
+        </div>
+      </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;toast toast-dark&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;alert&#34;</span> <span class="na">aria-live</span><span class="o">=</span><span class="s">&#34;assertive&#34;</span> <span class="na">aria-atomic</span><span class="o">=</span><span class="s">&#34;true&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;toast-header&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;pt-icon pt-i-gear me-2 text-secondary&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">strong</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;me-auto text-white&#34;</span><span class="p">&gt;</span>Bootstrap<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">small</span><span class="p">&gt;</span>11 mins ago<span class="p">&lt;/</span><span class="nt">small</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn-close&#34;</span> <span class="na">data-bs-dismiss</span><span class="o">=</span><span class="s">&#34;toast&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Close&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;toast-body&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex justify-content-between align-items-start&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;../../assets/img/bio-example-1.png&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;placeholder-img br-100&#34;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;height: 1.875rem; width: 1.875rem&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;ms-3 me-auto&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;mb-0&#34;</span><span class="p">&gt;</span>Hello, world! This is a toast message.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text-muted mb-0&#34;</span><span class="p">&gt;</span>Hello, world! This is a notification. Lore ipsum dolor lo
+</span></span><span class="line"><span class="cl">      rem ipsum dolor<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></span></span></code></pre></div></div>
 
@@ -990,37 +1075,54 @@ Previously, our scripts dynamically added the <code>.hide</code> class to comple
 <small class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-success bg-success bg-opacity-10 border border-success border-opacity-10 rounded-2">Added in v5.2.0</small>
 
 <p>As part of Bootstrap&rsquo;s evolving CSS variables approach, toasts now use local CSS variables on <code>.toast</code> for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl">  <span class="na">--#{$prefix}toast-padding-x</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$toast-padding-x</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}toast-padding-y</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$toast-padding-y</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}toast-spacing</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$toast-spacing</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}toast-max-width</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$toast-max-width</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="k">@include</span><span class="nd"> rfs</span><span class="p">(</span><span class="nv">$toast-font-size</span><span class="o">,</span> <span class="o">--</span><span class="si">#{</span><span class="nv">$prefix</span><span class="si">}</span><span class="n">toast-font-size</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}toast-color</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$toast-color</span><span class="si">}</span><span class="p">;</span>
+<p><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl">  <span class="k">@include</span><span class="nd"> rfs</span><span class="p">(</span><span class="nv">$toast-font-size</span><span class="o">,</span> <span class="o">--</span><span class="si">#{</span><span class="nv">$prefix</span><span class="si">}</span><span class="n">toast-font-size</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}toast-bg</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$toast-background-color</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}toast-border-width</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$toast-border-width</span><span class="si">}</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}toast-border-color</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$toast-border-color</span><span class="si">}</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}toast-border-radius</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$toast-border-radius</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}toast-border-width</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$toast-border-width</span><span class="si">}</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}toast-box-shadow</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$toast-box-shadow</span><span class="si">}</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}toast-header-color</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$toast-header-color</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}toast-button-close</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$toast-button-close</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}toast-color</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$toast-color</span><span class="si">}</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}toast-header-bg</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$toast-header-background-color</span><span class="si">}</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}toast-header-border-color</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$toast-header-border-color</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}toast-header-color</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$toast-header-color</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}toast-max-width</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$toast-max-width</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}toast-muted</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$toast-muted</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}toast-padding-x</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$toast-padding-x</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}toast-padding-y</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$toast-padding-y</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}toast-small</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$toast-small</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}toast-spacing</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$toast-spacing</span><span class="si">}</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  </span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl">  <span class="na">--#{$prefix}toast-bg</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$toast-bg-dark</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}toast-border-color</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$toast-border-color-dark</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}toast-button-close</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$toast-button-close-dark</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}toast-color</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$toast-color-dark</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}toast-header-bg</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$toast-header-bg-dark</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}toast-header-border-color</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$toast-header-border-color-dark</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}toast-small</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$toast-small-dark</span><span class="si">}</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  </span></span></code></pre></div></p>
 <h3 id="sass-variables">Sass variables <a class="anchor-link" href="#sass-variables" aria-label="Link to this section: Sass variables"></a></h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="nv">$toast-max-width</span><span class="o">:</span>                   <span class="mi">350</span><span class="kt">px</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$toast-padding-x</span><span class="o">:</span>                   <span class="mf">.75</span><span class="kt">rem</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$toast-padding-y</span><span class="o">:</span>                   <span class="mf">.5</span><span class="kt">rem</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$toast-font-size</span><span class="o">:</span>                   <span class="mf">.875</span><span class="kt">rem</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$toast-color</span><span class="o">:</span>                       <span class="n">null</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$toast-background-color</span><span class="o">:</span>            <span class="nf">rgba</span><span class="p">(</span><span class="nv">$white</span><span class="o">,</span> <span class="mf">.85</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$toast-border-width</span><span class="o">:</span>                <span class="nv">$border-width</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$toast-border-color</span><span class="o">:</span>                <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="si">#{</span><span class="nv">$prefix</span><span class="si">}</span><span class="n">border-color-translucent</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$toast-border-radius</span><span class="o">:</span>               <span class="nv">$border-radius</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$toast-box-shadow</span><span class="o">:</span>                  <span class="nv">$box-shadow</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$toast-spacing</span><span class="o">:</span>                     <span class="nv">$container-padding-x</span><span class="p">;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="nv">$toast-background-color</span><span class="o">:</span>            <span class="nv">$white</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$toast-border-color</span><span class="o">:</span>                <span class="nv">$primary-t8</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$toast-border-radius</span><span class="o">:</span>               <span class="mf">.25</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$toast-box-shadow</span><span class="o">:</span>                  <span class="mi">0</span> <span class="mf">.3125</span><span class="kt">rem</span> <span class="mf">.625</span><span class="kt">rem</span> <span class="mi">0</span> <span class="nf">rgba</span><span class="p">(</span><span class="nv">$black</span><span class="o">,</span> <span class="mf">.15</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$toast-button-close</span><span class="o">:</span>                <span class="sx">url(&#34;data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%20height%3D%221.5rem%22%20width%3D%221.5rem%22%3E%3Cpath%20fill%3D%22%23adadad%22%20d%3D%22M4.646%204.646a.5.5%200%200%201%20.708%200L8%207.293l2.646-2.647a.5.5%200%200%201%20.708.708L8.707%208l2.647%202.646a.5.5%200%200%201-.708.708L8%208.707l-2.646%202.647a.5.5%200%200%201-.708-.708L7.293%208%204.646%205.354a.5.5%200%200%201%200-.708z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E&#34;)</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$toast-header-background-color</span><span class="o">:</span>     <span class="nv">$toast-background-color</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$toast-header-border-color</span><span class="o">:</span>         <span class="nv">$primary-t8</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$toast-header-color</span><span class="o">:</span>                <span class="nv">$primary</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$toast-muted</span><span class="o">:</span>                       <span class="nv">$primary-t5</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$toast-padding-x</span><span class="o">:</span>                   <span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$toast-padding-y</span><span class="o">:</span>                   <span class="mf">.4375</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$toast-small</span><span class="o">:</span>                       <span class="nv">$primary-t6</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">$toast-header-color</span><span class="o">:</span>                <span class="nv">$gray-600</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$toast-header-background-color</span><span class="o">:</span>     <span class="nf">rgba</span><span class="p">(</span><span class="nv">$white</span><span class="o">,</span> <span class="mf">.85</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$toast-header-border-color</span><span class="o">:</span>         <span class="nf">rgba</span><span class="p">(</span><span class="nv">$black</span><span class="o">,</span> <span class="mf">.05</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$toast-bg-dark</span><span class="o">:</span>                     <span class="nv">$primary</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$toast-header-bg-dark</span><span class="o">:</span>              <span class="nv">$primary</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$toast-header-border-color-dark</span><span class="o">:</span>    <span class="nv">$primary-t3</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$toast-border-color-dark</span><span class="o">:</span>           <span class="nv">$primary-t1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$toast-button-close-dark</span><span class="o">:</span>           <span class="sx">url(&#34;data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%20height%3D%221.5rem%22%20width%3D%221.5rem%22%3E%3Cpath%20fill%3D%22%23c4c4c4%22%20d%3D%22M4.646%204.646a.5.5%200%200%201%20.708%200L8%207.293l2.646-2.647a.5.5%200%200%201%20.708.708L8.707%208l2.647%202.646a.5.5%200%200%201-.708.708L8%208.707l-2.646%202.647a.5.5%200%200%201-.708-.708L7.293%208%204.646%205.354a.5.5%200%200%201%200-.708z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E&#34;)</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$toast-color-dark</span><span class="o">:</span>                  <span class="nv">$white</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$toast-small-dark</span><span class="o">:</span>                  <span class="nv">$primary-t7</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
 </span></span></code></pre></div>
 <h2 id="usage">Usage <a class="anchor-link" href="#usage" aria-label="Link to this section: Usage"></a></h2>
 <p>Initialize toasts via JavaScript:</p>

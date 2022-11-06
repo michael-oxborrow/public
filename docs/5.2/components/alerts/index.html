@@ -692,8 +692,8 @@ When an alert is dismissed, the element is completely removed from the page stru
 
 <p>As part of Bootstrap&rsquo;s evolving CSS variables approach, alerts now use local CSS variables on <code>.alert</code> for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl">  <span class="na">--#{$prefix}alert-bg</span><span class="o">:</span> <span class="ni">transparent</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}alert-border-color</span><span class="o">:</span> <span class="ni">transparent</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}alert-border</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$alert-border-width</span><span class="si">}</span> <span class="ni">solid</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="si">#{</span><span class="nv">$prefix</span><span class="si">}</span><span class="n">alert-border-color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}alert-border-color</span><span class="o">:</span> <span class="ni">transparent</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}alert-border-radius</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$alert-border-radius</span><span class="si">}</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}alert-color</span><span class="o">:</span> <span class="ni">inherit</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}alert-margin-bottom</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$alert-margin-bottom</span><span class="si">}</span><span class="p">;</span>
@@ -702,17 +702,17 @@ When an alert is dismissed, the element is completely removed from the page stru
 </span></span><span class="line"><span class="cl">  <span class="na">--#{$prefix}btn-close-bg-dark</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$btn-close-bg-dark</span><span class="si">}</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  </span></span></code></pre></div>
 <h3 id="sass-variables">Sass variables <a class="anchor-link" href="#sass-variables" aria-label="Link to this section: Sass variables"></a></h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="nv">$alert-padding-y</span><span class="o">:</span>                         <span class="mf">.6875</span><span class="kt">rem</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$alert-padding-x</span><span class="o">:</span>                         <span class="mi">1</span><span class="mf">.5</span><span class="kt">rem</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$alert-icon-padding-y</span><span class="o">:</span>                    <span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$alert-margin-bottom</span><span class="o">:</span>                     <span class="mi">1</span><span class="mf">.5</span><span class="kt">rem</span><span class="p">;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="nv">$alert-bg-scale</span><span class="o">:</span>                          <span class="o">-</span><span class="mi">80</span><span class="kt">%</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="nv">$alert-border-radius</span><span class="o">:</span>                     <span class="nv">$border-radius</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$alert-link-font-weight</span><span class="o">:</span>                  <span class="nv">$font-weight-normal</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$alert-border-width</span><span class="o">:</span>                      <span class="nv">$border-width</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$alert-bg-scale</span><span class="o">:</span>                          <span class="o">-</span><span class="mi">80</span><span class="kt">%</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="nv">$alert-border-scale</span><span class="o">:</span>                      <span class="o">-</span><span class="mi">70</span><span class="kt">%</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$alert-border-width</span><span class="o">:</span>                      <span class="nv">$border-width</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="nv">$alert-color-scale</span><span class="o">:</span>                       <span class="mi">40</span><span class="kt">%</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="nv">$alert-dismissible-padding-r</span><span class="o">:</span>             <span class="nv">$alert-padding-x</span> <span class="o">*</span> <span class="mi">3</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$alert-icon-padding-y</span><span class="o">:</span>                    <span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$alert-link-font-weight</span><span class="o">:</span>                  <span class="nv">$font-weight-normal</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$alert-margin-bottom</span><span class="o">:</span>                     <span class="mi">1</span><span class="mf">.5</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$alert-padding-x</span><span class="o">:</span>                         <span class="mi">1</span><span class="mf">.5</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$alert-padding-y</span><span class="o">:</span>                         <span class="mf">.6875</span><span class="kt">rem</span><span class="p">;</span>
 </span></span></code></pre></div>
 <h3 id="sass-mixin">Sass mixin <a class="anchor-link" href="#sass-mixin" aria-label="Link to this section: Sass mixin"></a></h3>
 <p>Used in combination with <code>$theme-colors</code> to create contextual modifier classes for our alerts.</p>
@@ -734,16 +734,70 @@ When an alert is dismissed, the element is completely removed from the page stru
 <p>Loop that generates the modifier classes with the <code>alert-variant()</code> mixin.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="c1">// Generate contextual modifier classes for colorizing the alert.
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>
-</span></span><span class="line"><span class="cl"><span class="k">@each</span> <span class="nv">$state</span><span class="o">,</span> <span class="nv">$value</span> <span class="ow">in</span> <span class="nv">$theme-colors</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="nv">$alert-background</span><span class="o">:</span> <span class="nf">shift-color</span><span class="p">(</span><span class="nv">$value</span><span class="o">,</span> <span class="nv">$alert-bg-scale</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">  <span class="nv">$alert-border</span><span class="o">:</span> <span class="nf">shift-color</span><span class="p">(</span><span class="nv">$value</span><span class="o">,</span> <span class="nv">$alert-border-scale</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">  <span class="nv">$alert-color</span><span class="o">:</span> <span class="nf">shift-color</span><span class="p">(</span><span class="nv">$value</span><span class="o">,</span> <span class="nv">$alert-color-scale</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">@each</span> <span class="nv">$state</span><span class="o">,</span> <span class="nv">$value</span> <span class="ow">in</span> <span class="nv">$alert-colors</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">$alert-background</span><span class="o">:</span> <span class="nv">$white</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">$alert-border</span><span class="o">:</span> <span class="nv">$white</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">$alert-color</span><span class="o">:</span> <span class="nv">$value</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">$alert-dark-background</span><span class="o">:</span> <span class="nv">$primary</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">$alert-dark-border</span><span class="o">:</span> <span class="nv">$primary</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="k">@if</span> <span class="p">(</span><span class="nf">contrast-ratio</span><span class="p">(</span><span class="nv">$alert-background</span><span class="o">,</span> <span class="nv">$alert-color</span><span class="p">)</span> <span class="o">&lt;</span> <span class="nv">$min-contrast-ratio</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nv">$alert-color</span><span class="o">:</span> <span class="nf">mix</span><span class="p">(</span><span class="nv">$value</span><span class="o">,</span> <span class="nf">color-contrast</span><span class="p">(</span><span class="nv">$alert-background</span><span class="p">)</span><span class="o">,</span> <span class="nf">abs</span><span class="p">(</span><span class="nv">$alert-color-scale</span><span class="p">));</span>
-</span></span><span class="line"><span class="cl">  <span class="p">}</span>
-</span></span><span class="line"><span class="cl">  <span class="nc">.alert-</span><span class="si">#{</span><span class="nv">$state</span><span class="si">}</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nc">.alert-light-</span><span class="si">#{</span><span class="nv">$state</span><span class="si">}</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="k">@include</span><span class="nd"> alert-variant</span><span class="p">(</span><span class="nv">$alert-background</span><span class="o">,</span> <span class="nv">$alert-border</span><span class="o">,</span> <span class="nv">$alert-color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nc">.alert-link</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">p</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="na">color</span><span class="o">:</span> <span class="nv">$primary</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nt">p</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="na">-webkit-box-orient</span><span class="o">:</span> <span class="ni">vertical</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="na">-webkit-line-clamp</span><span class="o">:</span> <span class="mi">2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="na">display</span><span class="o">:</span> <span class="o">-</span><span class="n">webkit-box</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="na">overflow</span><span class="o">:</span> <span class="ni">hidden</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nc">.alert-dark-</span><span class="si">#{</span><span class="nv">$state</span><span class="si">}</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">@include</span><span class="nd"> alert-variant</span><span class="p">(</span><span class="nv">$alert-dark-background</span><span class="o">,</span> <span class="nv">$alert-dark-border</span><span class="o">,</span> <span class="nv">$alert-color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nc">.alert-link</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nc">.btn-link</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nc">.btn-outline-primary</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">p</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="na">color</span><span class="o">:</span> <span class="nv">$white</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nt">p</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="na">-webkit-box-orient</span><span class="o">:</span> <span class="ni">vertical</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="na">-webkit-line-clamp</span><span class="o">:</span> <span class="mi">2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="na">display</span><span class="o">:</span> <span class="o">-</span><span class="n">webkit-box</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="na">overflow</span><span class="o">:</span> <span class="ni">hidden</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nc">.btn-outline-primary</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="na">border-color</span><span class="o">:</span> <span class="nv">$white</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">&amp;</span><span class="nc">.alert-dismissible</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nc">.btn-close</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="na">background-image</span><span class="o">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="si">#{</span><span class="nv">$prefix</span><span class="si">}</span><span class="n">btn-close-bg-dark</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">@each</span> <span class="nv">$state</span><span class="o">,</span> <span class="nv">$value</span> <span class="ow">in</span> <span class="nv">$alert-icons</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">$alert-icon</span><span class="o">:</span> <span class="nv">$value</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nc">.alert-dark-</span><span class="si">#{</span><span class="nv">$state</span><span class="si">}</span><span class="nd">:before</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nc">.alert-light-</span><span class="si">#{</span><span class="nv">$state</span><span class="si">}</span><span class="nd">:before</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="na">background</span><span class="o">:</span> <span class="nv">$alert-icon</span> <span class="ni">no-repeat</span> <span class="ni">left</span> <span class="ni">center</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="na">content</span><span class="o">:</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="na">height</span><span class="o">:</span> <span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="na">margin</span><span class="o">:</span> <span class="mf">.25</span><span class="kt">rem</span> <span class="mi">1</span><span class="mf">.125</span><span class="kt">rem</span> <span class="mf">.25</span><span class="kt">rem</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="na">padding-right</span><span class="o">:</span> <span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="na">width</span><span class="o">:</span> <span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="na">z-index</span><span class="o">:</span> <span class="nv">$stretched-link-z-index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div>
